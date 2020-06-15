@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3152CD3824971A6200C407C4 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3152CD3724971A6200C407C4 /* MainTabViewController.swift */; };
+		3152CD3A24971ACC00C407C4 /* FMHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3152CD3924971ACC00C407C4 /* FMHomeController.swift */; };
+		3152CD3D24971D4B00C407C4 /* FMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3152CD3C24971D4B00C407C4 /* FMNavigationController.swift */; };
+		3152CD3F24971F6900C407C4 /* FMBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3152CD3E24971F6900C407C4 /* FMBasicContentView.swift */; };
+		3152CD412497204E00C407C4 /* FMBouncesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3152CD402497204E00C407C4 /* FMBouncesContentView.swift */; };
+		3152CD43249722D000C407C4 /* FMIrregularityBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3152CD42249722D000C407C4 /* FMIrregularityBasicContentView.swift */; };
 		3153608B249367A0002392BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3153608A249367A0002392BB /* AppDelegate.swift */; };
 		3153608F249367A0002392BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3153608E249367A0002392BB /* ViewController.swift */; };
 		31536092249367A0002392BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31536090249367A0002392BB /* Main.storyboard */; };
@@ -27,6 +33,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3152CD3724971A6200C407C4 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		3152CD3924971ACC00C407C4 /* FMHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeController.swift; sourceTree = "<group>"; };
+		3152CD3C24971D4B00C407C4 /* FMNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMNavigationController.swift; sourceTree = "<group>"; };
+		3152CD3E24971F6900C407C4 /* FMBasicContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMBasicContentView.swift; sourceTree = "<group>"; };
+		3152CD402497204E00C407C4 /* FMBouncesContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMBouncesContentView.swift; sourceTree = "<group>"; };
+		3152CD42249722D000C407C4 /* FMIrregularityBasicContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMIrregularityBasicContentView.swift; sourceTree = "<group>"; };
 		31536087249367A0002392BB /* XMLY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMLY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3153608A249367A0002392BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3153608E249367A0002392BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +74,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3152CD3B24971D0C00C407C4 /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				3152CD3C24971D4B00C407C4 /* FMNavigationController.swift */,
+				3152CD3E24971F6900C407C4 /* FMBasicContentView.swift */,
+				3152CD402497204E00C407C4 /* FMBouncesContentView.swift */,
+				3152CD42249722D000C407C4 /* FMIrregularityBasicContentView.swift */,
+			);
+			path = MainController;
+			sourceTree = "<group>";
+		};
 		3153607E249367A0002392BB = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +148,7 @@
 		315360A12493735A002392BB /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				3152CD3924971ACC00C407C4 /* FMHomeController.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -132,10 +156,12 @@
 		315360A22493735A002392BB /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				3152CD3B24971D0C00C407C4 /* MainController */,
 				3153608A249367A0002392BB /* AppDelegate.swift */,
 				3153608E249367A0002392BB /* ViewController.swift */,
 				315360A424937600002392BB /* MainViewController.swift */,
 				315360A72493763F002392BB /* HomeVC.swift */,
+				3152CD3724971A6200C407C4 /* MainTabViewController.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -321,14 +347,20 @@
 				315360AA2493786E002392BB /* XMLYHeader.swift in Sources */,
 				315360BA24937AA7002392BB /* WRProxy.swift in Sources */,
 				3153608F249367A0002392BB /* ViewController.swift in Sources */,
+				3152CD3824971A6200C407C4 /* MainTabViewController.swift in Sources */,
 				315360B924937AA7002392BB /* WRCustomNavigationBar.swift in Sources */,
 				315360BB24937AA7002392BB /* WRCycleScrollView.swift in Sources */,
 				3153608B249367A0002392BB /* AppDelegate.swift in Sources */,
 				315360BD24937AA7002392BB /* ReplicatorLayer.swift in Sources */,
 				315360BE24937AA7002392BB /* URefresh.swift in Sources */,
+				3152CD43249722D000C407C4 /* FMIrregularityBasicContentView.swift in Sources */,
+				3152CD3F24971F6900C407C4 /* FMBasicContentView.swift in Sources */,
 				315360BF24937AA7002392BB /* LBFMCustomLabel.swift in Sources */,
 				315360A624937600002392BB /* MainViewController.swift in Sources */,
+				3152CD3A24971ACC00C407C4 /* FMHomeController.swift in Sources */,
+				3152CD3D24971D4B00C407C4 /* FMNavigationController.swift in Sources */,
 				315360BC24937AA7002392BB /* WRCycleCell.swift in Sources */,
+				3152CD412497204E00C407C4 /* FMBouncesContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
