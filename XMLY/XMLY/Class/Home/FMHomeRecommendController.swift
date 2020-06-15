@@ -1,5 +1,5 @@
 //
-//  FMHomeController.swift
+//  FMHomeRecommendController.swift
 //  XMLY
 //
 //  Created by ishop02 on 2020/6/15.
@@ -8,12 +8,14 @@
 
 import UIKit
 
-class FMHomeController: UIViewController {
+class FMHomeRecommendController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        view.backgroundColor = colorArray2.sm_random()
         // Do any additional setup after loading the view.
     }
     
+
 }

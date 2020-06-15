@@ -30,6 +30,7 @@
 		315360BD24937AA7002392BB /* ReplicatorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315360B324937AA7002392BB /* ReplicatorLayer.swift */; };
 		315360BE24937AA7002392BB /* URefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315360B524937AA7002392BB /* URefresh.swift */; };
 		315360BF24937AA7002392BB /* LBFMCustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315360B724937AA7002392BB /* LBFMCustomLabel.swift */; };
+		31FAE12D249766EE00C1E632 /* FMHomeRecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FAE12C249766EE00C1E632 /* FMHomeRecommendController.swift */; };
 		B87466738B6A314D40DDCA0E /* Pods_XMLY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B748A80F7136BE864B83D2 /* Pods_XMLY.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		315360B324937AA7002392BB /* ReplicatorLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplicatorLayer.swift; sourceTree = "<group>"; };
 		315360B524937AA7002392BB /* URefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URefresh.swift; sourceTree = "<group>"; };
 		315360B724937AA7002392BB /* LBFMCustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBFMCustomLabel.swift; sourceTree = "<group>"; };
+		31FAE12C249766EE00C1E632 /* FMHomeRecommendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeRecommendController.swift; sourceTree = "<group>"; };
 		33FADE0CB99E4B05391F506A /* Pods-XMLY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMLY.debug.xcconfig"; path = "Target Support Files/Pods-XMLY/Pods-XMLY.debug.xcconfig"; sourceTree = "<group>"; };
 		58B748A80F7136BE864B83D2 /* Pods_XMLY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMLY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCAFE106EA7CB4FEE6497561 /* Pods-XMLY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMLY.release.xcconfig"; path = "Target Support Files/Pods-XMLY/Pods-XMLY.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		3152CD3B24971D0C00C407C4 /* MainController */ = {
 			isa = PBXGroup;
 			children = (
+				3152CD3724971A6200C407C4 /* MainTabViewController.swift */,
 				3152CD3C24971D4B00C407C4 /* FMNavigationController.swift */,
 				3152CD3E24971F6900C407C4 /* FMBasicContentView.swift */,
 				3152CD402497204E00C407C4 /* FMBouncesContentView.swift */,
@@ -153,7 +156,7 @@
 		315360A12493735A002392BB /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				3152CD3924971ACC00C407C4 /* FMHomeController.swift */,
+				31FAE12E2497690500C1E632 /* Home */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -163,7 +166,6 @@
 			children = (
 				3153608A249367A0002392BB /* AppDelegate.swift */,
 				315360A72493763F002392BB /* HomeVC.swift */,
-				3152CD3724971A6200C407C4 /* MainTabViewController.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -213,6 +215,15 @@
 			path = CustomLabel;
 			sourceTree = "<group>";
 		};
+		31FAE12E2497690500C1E632 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3152CD3924971ACC00C407C4 /* FMHomeController.swift */,
+				31FAE12C249766EE00C1E632 /* FMHomeRecommendController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		369125E6FA59FC1C2EE6510B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +269,7 @@
 		3153607F249367A0002392BB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = FM;
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = happy;
@@ -346,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				315360B824937AA7002392BB /* WRNavigationBar.swift in Sources */,
+				31FAE12D249766EE00C1E632 /* FMHomeRecommendController.swift in Sources */,
 				315360A82493763F002392BB /* HomeVC.swift in Sources */,
 				315360AA2493786E002392BB /* XMLYHeader.swift in Sources */,
 				315360BA24937AA7002392BB /* WRProxy.swift in Sources */,

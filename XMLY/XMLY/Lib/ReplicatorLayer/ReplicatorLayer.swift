@@ -39,7 +39,7 @@ class ReplicatorLayer: UIView {
         replicatorLayer.instanceDelay = 0.2
         
         //设置层的颜色，(前提是要设置层的背景颜色，如果没有设置背景颜色，默认是透明的，再设置这个属性不会有效果。
-        replicatorLayer.instanceColor = KButtonColor.cgColor
+        replicatorLayer.instanceColor = FMButtonColor.cgColor
         
         //需要把子层加入到复制层中，复制层按照前面设置的参数自动复制
         replicatorLayer.addSublayer(layer)
