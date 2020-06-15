@@ -8,6 +8,7 @@
 
 import UIKit
 import ESTabBarController_swift
+import SwiftMessages
 
 class MainTabViewController: ESTabBarController {
     
@@ -18,7 +19,36 @@ class MainTabViewController: ESTabBarController {
     }
     
     func setupTabBarStyle() {
-        let tabBarController = ESTabBarController()
+        
+        self.delegate = delegate
+        title = "Irregularity"
+        tabBar.shadowImage = UIImage(named: "transparent")
+        shouldHijackHandler = {
+            tabbarController, viewController, index in
+            if index == 2 {
+                return true
+            }
+            return false
+        }
+        
+        self.didHijackHandler = {
+            [weak tabBarController] tabbarController, viewController, index in
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                let warning = MessageView.viewFromNib(layout: .cardView)
+                warning.configureTheme(.warning)
+                warning.configureDropShadow()
+                
+                let iconText = ["🤔", "😳", "🙄", "😶"].sm_random()!
+                warning.configureContent(title: "Warning", body: "暂时没有此功能", iconText: iconText)
+                warning.button?.isHidden = true
+                var warningConfig = SwiftMessages.defaultConfig
+                warningConfig.presentationContext = .window(windowLevel: UIWindow.Level.statusBar)
+                SwiftMessages.show(config: warningConfig, view: warning)
+                //                let vc = FMPlayController()
+                //                tabBarController?.present(vc, animated: true, completion: nil)
+            }
+        }
         
         let home = FMHomeController()
         let listen = FMHomeController()
@@ -43,9 +73,8 @@ class MainTabViewController: ESTabBarController {
         find.title = "发现"
         mine.title = "我的"
         
-        tabBarController.viewControllers = [homeNav, listenNav, playNav, findNav, mineNav]
+        self.viewControllers = [homeNav, listenNav, playNav, findNav, mineNav]
         
-//        return tabBarController
     }
     
 }
