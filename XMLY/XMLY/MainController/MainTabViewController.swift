@@ -32,7 +32,7 @@ class MainTabViewController: ESTabBarController {
         }
         
         self.didHijackHandler = {
-            [weak tabBarController] tabbarController, viewController, index in
+            tabbarController, viewController, index in
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                 let warning = MessageView.viewFromNib(layout: .cardView)

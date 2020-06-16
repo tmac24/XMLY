@@ -62,11 +62,11 @@ class MainViewController: UITabBarController {
     // 添加所有子控制器
     func addChildViewControllers()
     {
-        addChildVC(childVc: HomeVC(),title: "首页",imageName: "tabbar_home")
-        addChildVC(childVc: HomeVC(), title: "消息", imageName: "tabbar_message_center")
-        addChildVC(childVc: HomeVC(), title: "", imageName: "")
-        addChildVC(childVc: HomeVC(), title: "发现", imageName: "tabbar_discover")
-        addChildVC(childVc: HomeVC(), title: "我", imageName: "tabbar_profile")
+        addChildVC(childVc: FMHomeController(),title: "首页",imageName: "tabbar_home")
+        addChildVC(childVc: FMHomeController(), title: "消息", imageName: "tabbar_message_center")
+        addChildVC(childVc: FMHomeController(), title: "", imageName: "")
+        addChildVC(childVc: FMHomeController(), title: "发现", imageName: "tabbar_discover")
+        addChildVC(childVc: FMHomeController(), title: "我", imageName: "tabbar_profile")
     }
     
     // 添加一个子控制器

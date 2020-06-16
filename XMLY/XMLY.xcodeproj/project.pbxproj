@@ -15,12 +15,10 @@
 		3152CD43249722D000C407C4 /* FMIrregularityBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3152CD42249722D000C407C4 /* FMIrregularityBasicContentView.swift */; };
 		3152CD4724975CB500C407C4 /* FMArrayUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3152CD4624975CB500C407C4 /* FMArrayUtils.swift */; };
 		3153608B249367A0002392BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3153608A249367A0002392BB /* AppDelegate.swift */; };
-		3153608F249367A0002392BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3153608E249367A0002392BB /* ViewController.swift */; };
 		31536092249367A0002392BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31536090249367A0002392BB /* Main.storyboard */; };
 		31536094249367A0002392BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31536093249367A0002392BB /* Assets.xcassets */; };
 		31536097249367A0002392BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31536095249367A0002392BB /* LaunchScreen.storyboard */; };
 		315360A624937600002392BB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315360A424937600002392BB /* MainViewController.swift */; };
-		315360A82493763F002392BB /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315360A72493763F002392BB /* HomeVC.swift */; };
 		315360AA2493786E002392BB /* XMLYHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315360A92493786E002392BB /* XMLYHeader.swift */; };
 		315360B824937AA7002392BB /* WRNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315360AC24937AA7002392BB /* WRNavigationBar.swift */; };
 		315360B924937AA7002392BB /* WRCustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315360AD24937AA7002392BB /* WRCustomNavigationBar.swift */; };
@@ -44,13 +42,11 @@
 		3152CD4624975CB500C407C4 /* FMArrayUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMArrayUtils.swift; sourceTree = "<group>"; };
 		31536087249367A0002392BB /* XMLY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMLY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3153608A249367A0002392BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3153608E249367A0002392BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		31536091249367A0002392BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31536093249367A0002392BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31536096249367A0002392BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31536098249367A0002392BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		315360A424937600002392BB /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		315360A72493763F002392BB /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		315360A92493786E002392BB /* XMLYHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLYHeader.swift; sourceTree = "<group>"; };
 		315360AC24937AA7002392BB /* WRNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRNavigationBar.swift; sourceTree = "<group>"; };
 		315360AD24937AA7002392BB /* WRCustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCustomNavigationBar.swift; sourceTree = "<group>"; };
@@ -87,7 +83,6 @@
 				3152CD402497204E00C407C4 /* FMBouncesContentView.swift */,
 				3152CD42249722D000C407C4 /* FMIrregularityBasicContentView.swift */,
 				315360A424937600002392BB /* MainViewController.swift */,
-				3153608E249367A0002392BB /* ViewController.swift */,
 			);
 			path = MainController;
 			sourceTree = "<group>";
@@ -165,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				3153608A249367A0002392BB /* AppDelegate.swift */,
-				315360A72493763F002392BB /* HomeVC.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -219,9 +213,17 @@
 			isa = PBXGroup;
 			children = (
 				3152CD3924971ACC00C407C4 /* FMHomeController.swift */,
-				31FAE12C249766EE00C1E632 /* FMHomeRecommendController.swift */,
+				31FAE12F2497773400C1E632 /* 推荐 */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		31FAE12F2497773400C1E632 /* 推荐 */ = {
+			isa = PBXGroup;
+			children = (
+				31FAE12C249766EE00C1E632 /* FMHomeRecommendController.swift */,
+			);
+			path = "推荐";
 			sourceTree = "<group>";
 		};
 		369125E6FA59FC1C2EE6510B /* Frameworks */ = {
@@ -359,10 +361,8 @@
 			files = (
 				315360B824937AA7002392BB /* WRNavigationBar.swift in Sources */,
 				31FAE12D249766EE00C1E632 /* FMHomeRecommendController.swift in Sources */,
-				315360A82493763F002392BB /* HomeVC.swift in Sources */,
 				315360AA2493786E002392BB /* XMLYHeader.swift in Sources */,
 				315360BA24937AA7002392BB /* WRProxy.swift in Sources */,
-				3153608F249367A0002392BB /* ViewController.swift in Sources */,
 				3152CD3824971A6200C407C4 /* MainTabViewController.swift in Sources */,
 				315360B924937AA7002392BB /* WRCustomNavigationBar.swift in Sources */,
 				315360BB24937AA7002392BB /* WRCycleScrollView.swift in Sources */,

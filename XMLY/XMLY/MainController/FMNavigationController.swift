@@ -34,6 +34,6 @@ extension FMNavigationController {
         if children.count > 0 {
             viewcontroller.hidesBottomBarWhenPushed = true
         }
-        super .pushViewController(viewcontroller, animated: animated)
+        super.pushViewController(viewcontroller, animated: animated)
     }
 }

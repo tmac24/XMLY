@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import ESTabBarController_swift
-import SwiftMessages
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
