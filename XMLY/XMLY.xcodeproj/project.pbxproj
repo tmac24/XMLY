@@ -14,6 +14,10 @@
 		3152CD412497204E00C407C4 /* FMBouncesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3152CD402497204E00C407C4 /* FMBouncesContentView.swift */; };
 		3152CD43249722D000C407C4 /* FMIrregularityBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3152CD42249722D000C407C4 /* FMIrregularityBasicContentView.swift */; };
 		3152CD4724975CB500C407C4 /* FMArrayUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3152CD4624975CB500C407C4 /* FMArrayUtils.swift */; };
+		315319B024989B2A00658B55 /* FMHomeClassifyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315319AF24989B2A00658B55 /* FMHomeClassifyController.swift */; };
+		315319B22498A10300658B55 /* FMHomeClassifyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315319B12498A10300658B55 /* FMHomeClassifyCell.swift */; };
+		315319B42498A90B00658B55 /* FMHomeClassifyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315319B32498A90B00658B55 /* FMHomeClassifyModel.swift */; };
+		315319B92498BF0600658B55 /* FMHomeClassifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315319B82498BF0600658B55 /* FMHomeClassifyAPI.swift */; };
 		3153608B249367A0002392BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3153608A249367A0002392BB /* AppDelegate.swift */; };
 		31536092249367A0002392BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31536090249367A0002392BB /* Main.storyboard */; };
 		31536094249367A0002392BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31536093249367A0002392BB /* Assets.xcassets */; };
@@ -40,6 +44,10 @@
 		3152CD402497204E00C407C4 /* FMBouncesContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMBouncesContentView.swift; sourceTree = "<group>"; };
 		3152CD42249722D000C407C4 /* FMIrregularityBasicContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMIrregularityBasicContentView.swift; sourceTree = "<group>"; };
 		3152CD4624975CB500C407C4 /* FMArrayUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMArrayUtils.swift; sourceTree = "<group>"; };
+		315319AF24989B2A00658B55 /* FMHomeClassifyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeClassifyController.swift; sourceTree = "<group>"; };
+		315319B12498A10300658B55 /* FMHomeClassifyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeClassifyCell.swift; sourceTree = "<group>"; };
+		315319B32498A90B00658B55 /* FMHomeClassifyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeClassifyModel.swift; sourceTree = "<group>"; };
+		315319B82498BF0600658B55 /* FMHomeClassifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeClassifyAPI.swift; sourceTree = "<group>"; };
 		31536087249367A0002392BB /* XMLY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMLY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3153608A249367A0002392BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31536091249367A0002392BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +93,41 @@
 				315360A424937600002392BB /* MainViewController.swift */,
 			);
 			path = MainController;
+			sourceTree = "<group>";
+		};
+		315319AE24989AFD00658B55 /* 分类 */ = {
+			isa = PBXGroup;
+			children = (
+				315319B72498BEE100658B55 /* API */,
+				315319B62498BEC900658B55 /* Model */,
+				315319B52498BEC200658B55 /* View */,
+				315319AF24989B2A00658B55 /* FMHomeClassifyController.swift */,
+			);
+			path = "分类";
+			sourceTree = "<group>";
+		};
+		315319B52498BEC200658B55 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				315319B12498A10300658B55 /* FMHomeClassifyCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		315319B62498BEC900658B55 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				315319B32498A90B00658B55 /* FMHomeClassifyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		315319B72498BEE100658B55 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				315319B82498BF0600658B55 /* FMHomeClassifyAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		3153607E249367A0002392BB = {
@@ -214,6 +257,7 @@
 			children = (
 				3152CD3924971ACC00C407C4 /* FMHomeController.swift */,
 				31FAE12F2497773400C1E632 /* 推荐 */,
+				315319AE24989AFD00658B55 /* 分类 */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -362,16 +406,20 @@
 				315360B824937AA7002392BB /* WRNavigationBar.swift in Sources */,
 				31FAE12D249766EE00C1E632 /* FMHomeRecommendController.swift in Sources */,
 				315360AA2493786E002392BB /* XMLYHeader.swift in Sources */,
+				315319B024989B2A00658B55 /* FMHomeClassifyController.swift in Sources */,
 				315360BA24937AA7002392BB /* WRProxy.swift in Sources */,
 				3152CD3824971A6200C407C4 /* MainTabViewController.swift in Sources */,
+				315319B22498A10300658B55 /* FMHomeClassifyCell.swift in Sources */,
 				315360B924937AA7002392BB /* WRCustomNavigationBar.swift in Sources */,
 				315360BB24937AA7002392BB /* WRCycleScrollView.swift in Sources */,
 				3152CD4724975CB500C407C4 /* FMArrayUtils.swift in Sources */,
 				3153608B249367A0002392BB /* AppDelegate.swift in Sources */,
 				315360BD24937AA7002392BB /* ReplicatorLayer.swift in Sources */,
 				315360BE24937AA7002392BB /* URefresh.swift in Sources */,
+				315319B92498BF0600658B55 /* FMHomeClassifyAPI.swift in Sources */,
 				3152CD43249722D000C407C4 /* FMIrregularityBasicContentView.swift in Sources */,
 				3152CD3F24971F6900C407C4 /* FMBasicContentView.swift in Sources */,
+				315319B42498A90B00658B55 /* FMHomeClassifyModel.swift in Sources */,
 				315360BF24937AA7002392BB /* LBFMCustomLabel.swift in Sources */,
 				315360A624937600002392BB /* MainViewController.swift in Sources */,
 				3152CD3A24971ACC00C407C4 /* FMHomeController.swift in Sources */,

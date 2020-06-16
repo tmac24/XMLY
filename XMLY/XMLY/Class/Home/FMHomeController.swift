@@ -28,11 +28,11 @@ class FMHomeController: UIViewController {
         style.bottomLineHeight = 2
         
         let titles = ["推荐","分类","会员","直播","广播"]
-        let viewControllers:[UIViewController] = [FMHomeRecommendController(),FMHomeRecommendController(),FMHomeRecommendController(),FMHomeRecommendController(),FMHomeRecommendController()]
+        let viewControllers:[UIViewController] = [FMHomeClassifyController(),FMHomeClassifyController(),FMHomeRecommendController(),FMHomeRecommendController(),FMHomeRecommendController()]
         for vc in viewControllers{
             self.addChild(vc)
         }
-        let pageView = DNSPageView(frame: CGRect(x: 0, y: FMNavBarHeight+20, width: FMScreenWidth, height: FMScreenHeight - FMNavBarHeight - FMTarBarHeight - 44), style: style, titles: titles, childViewControllers: viewControllers)
+        let pageView = DNSPageView(frame: CGRect(x: 0, y: FMNavBarHeight+20, width: FMScreenWidth, height: FMScreenHeight - FMNavBarHeight - FMTarBarHeight - 44 - 8), style: style, titles: titles, childViewControllers: viewControllers)
         
         view.addSubview(pageView)
         
