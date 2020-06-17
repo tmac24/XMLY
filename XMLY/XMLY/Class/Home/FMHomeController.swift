@@ -28,7 +28,7 @@ class FMHomeController: UIViewController {
         style.bottomLineHeight = 2
         
         let titles = ["推荐","分类","会员","直播","广播"]
-        let viewControllers:[UIViewController] = [FMHomeClassifyController(),FMHomeClassifyController(),FMHomeRecommendController(),FMHomeRecommendController(),FMHomeRecommendController()]
+        let viewControllers:[UIViewController] = [FMHomeClassifyController(),FMHomeBroadcastController(),FMHomeRecommendController(),FMHomeRecommendController(),FMHomeRecommendController()]
         for vc in viewControllers{
             self.addChild(vc)
         }

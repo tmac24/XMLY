@@ -33,7 +33,7 @@ class FMHomeClassifyController: UIViewController {
         super.viewDidLoad()
         initUI()
         initLayout()
-        setupLoadData()
+        loadRequest()
     }
     
     func initUI() {
@@ -48,7 +48,7 @@ class FMHomeClassifyController: UIViewController {
     }
     
     // 加载数据
-    func setupLoadData(){
+    func loadRequest(){
         FMHomeClassifProvider.request(.classifyList) {result in
             if case let .success(response) = result {
                 //解析数据

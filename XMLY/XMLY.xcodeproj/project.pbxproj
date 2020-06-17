@@ -20,6 +20,7 @@
 		315319B92498BF0600658B55 /* FMHomeClassifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315319B82498BF0600658B55 /* FMHomeClassifyAPI.swift */; };
 		315340032499B094005870ED /* FMTestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315340022499B094005870ED /* FMTestAPI.swift */; };
 		315340052499BB79005870ED /* FMHomeClassifyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315340042499BB79005870ED /* FMHomeClassifyHeaderView.swift */; };
+		315340092499CA1A005870ED /* FMHomeBroadcastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315340072499CA1A005870ED /* FMHomeBroadcastController.swift */; };
 		3153608B249367A0002392BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3153608A249367A0002392BB /* AppDelegate.swift */; };
 		31536092249367A0002392BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31536090249367A0002392BB /* Main.storyboard */; };
 		31536094249367A0002392BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31536093249367A0002392BB /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		315319B82498BF0600658B55 /* FMHomeClassifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeClassifyAPI.swift; sourceTree = "<group>"; };
 		315340022499B094005870ED /* FMTestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMTestAPI.swift; sourceTree = "<group>"; };
 		315340042499BB79005870ED /* FMHomeClassifyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeClassifyHeaderView.swift; sourceTree = "<group>"; };
+		315340072499CA1A005870ED /* FMHomeBroadcastController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeBroadcastController.swift; sourceTree = "<group>"; };
 		31536087249367A0002392BB /* XMLY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMLY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3153608A249367A0002392BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31536091249367A0002392BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,10 +104,10 @@
 		315319AE24989AFD00658B55 /* 分类 */ = {
 			isa = PBXGroup;
 			children = (
+				315319AF24989B2A00658B55 /* FMHomeClassifyController.swift */,
 				315319B72498BEE100658B55 /* API */,
 				315319B62498BEC900658B55 /* Model */,
 				315319B52498BEC200658B55 /* View */,
-				315319AF24989B2A00658B55 /* FMHomeClassifyController.swift */,
 			);
 			path = "分类";
 			sourceTree = "<group>";
@@ -134,6 +136,14 @@
 				315340022499B094005870ED /* FMTestAPI.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		315340062499C9E9005870ED /* 广播 */ = {
+			isa = PBXGroup;
+			children = (
+				315340072499CA1A005870ED /* FMHomeBroadcastController.swift */,
+			);
+			path = "广播";
 			sourceTree = "<group>";
 		};
 		3153607E249367A0002392BB = {
@@ -262,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				3152CD3924971ACC00C407C4 /* FMHomeController.swift */,
+				315340062499C9E9005870ED /* 广播 */,
 				31FAE12F2497773400C1E632 /* 推荐 */,
 				315319AE24989AFD00658B55 /* 分类 */,
 			);
@@ -430,6 +441,7 @@
 				315360BF24937AA7002392BB /* LBFMCustomLabel.swift in Sources */,
 				315360A624937600002392BB /* MainViewController.swift in Sources */,
 				3152CD3A24971ACC00C407C4 /* FMHomeController.swift in Sources */,
+				315340092499CA1A005870ED /* FMHomeBroadcastController.swift in Sources */,
 				3152CD3D24971D4B00C407C4 /* FMNavigationController.swift in Sources */,
 				315360BC24937AA7002392BB /* WRCycleCell.swift in Sources */,
 				3152CD412497204E00C407C4 /* FMBouncesContentView.swift in Sources */,
