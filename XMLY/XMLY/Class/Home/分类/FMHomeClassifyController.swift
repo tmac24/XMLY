@@ -13,7 +13,8 @@ import HandyJSON
 class FMHomeClassifyController: UIViewController {
     
     private let FMCellIdentifier = "FMHomeClassifyCell"
-
+    private let FMHomeClassifyHeaderViewID = "FMHomeClassifyHeaderViewID"
+    
     var classifyModel: [FMClassifyModel]?
     
     lazy var collectionView : UICollectionView = {
@@ -23,23 +24,30 @@ class FMHomeClassifyController: UIViewController {
         collection.dataSource = self
         collection.showsVerticalScrollIndicator = false
         collection.register(FMHomeClassifyCell.self, forCellWithReuseIdentifier: FMCellIdentifier)
+        collection.register(FMHomeClassifyHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: FMHomeClassifyHeaderViewID)
         collection.backgroundColor = FMDownColor
         return collection
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = UIColor.white
-        view.addSubview(collectionView)
-        self.collectionView.snp.makeConstraints { (make) in
-            make.top.left.right.height.equalToSuperview()
-        }
-        
-        // 加载数据
+        initUI()
+        initLayout()
         setupLoadData()
     }
     
+    func initUI() {
+        view.backgroundColor = UIColor.white
+        view.addSubview(self.collectionView)
+    }
+    
+    func initLayout() {
+        self.collectionView.snp.makeConstraints { (make) in
+            make.top.left.right.height.equalToSuperview()
+        }
+    }
+    
+    // 加载数据
     func setupLoadData(){
         FMHomeClassifProvider.request(.classifyList) {result in
             if case let .success(response) = result {
@@ -67,21 +75,14 @@ extension FMHomeClassifyController:UICollectionViewDelegateFlowLayout, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
         let cell:FMHomeClassifyCell = collectionView.dequeueReusableCell(withReuseIdentifier: FMCellIdentifier, for: indexPath) as! FMHomeClassifyCell
-//        cell.titleLabel.text = "\(indexPath.row)"
         cell.itemModel = self.classifyModel?[indexPath.section].itemList![indexPath.row]
-        cell.backgroundColor = UIColor.white
-        cell.layer.masksToBounds = true
-        cell.layer.cornerRadius = 4.0
-        cell.layer.borderColor = UIColor.init(red: 220/255.0, green: 220/255.0, blue: 220/255.0, alpha: 1).cgColor
-        cell.layer.borderWidth = 0.5
         return cell
     }
     
     //每个分区的内边距
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
+        return UIEdgeInsets(top: 2, left: 2, bottom: 10, right: 2)
     }
     
     //最小 item 间距
@@ -96,11 +97,27 @@ extension FMHomeClassifyController:UICollectionViewDelegateFlowLayout, UICollect
     
     //item 的尺寸
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        print((FMScreenWidth - 7.5) / 3)
         if indexPath.section == 0 || indexPath.section == 1 || indexPath.section == 2 {
             return CGSize.init(width:(FMScreenWidth - 10) / 4,height:40)
         }else {
             return CGSize.init(width:(FMScreenWidth - 7.5) / 3,height:40)
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        if kind == UICollectionView.elementKindSectionHeader {
+            let heardView: FMHomeClassifyHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: FMHomeClassifyHeaderViewID, for: indexPath) as! FMHomeClassifyHeaderView
+            heardView.titleString = self.classifyModel?[indexPath.section].groupName
+            return heardView
+        }
+        return UICollectionReusableView()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        if section == 0 || section == 1 || section == 2 {
+            return .zero
+        }else {
+            return CGSize(width: FMScreenWidth, height: 30)
         }
     }
 }
