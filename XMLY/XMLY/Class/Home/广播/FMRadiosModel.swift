@@ -35,7 +35,7 @@ struct FMHomeRadioSquareResult: HandyJSON {
 
 struct FMHomeLocalRadio: HandyJSON{
 
-    var coverLarge : String!
+    var coverLarge : String?
     var coverSmall : String!
     var fmUid : Int!
     var id : Int!
@@ -43,7 +43,7 @@ struct FMHomeLocalRadio: HandyJSON{
     var playCount : Int!
     var playUrl : FMHomePlayUrl!
     var programId : Int!
-    var programName : String!
+    var programName : String?
     var programScheduleId : Int = 0
     var publish : Bool = false
 }

@@ -15,9 +15,14 @@ class FMHomeBroadcastController: UIViewController {
     private let FMtestId = "FMtestId"
     private let FMRadioSquareCellID = "FMRadioSquareCellID"
     private let FMRadioCategoriesCellID = "FMRadioCategoriesCellID"
+    private let FMHomeRadiosCellID = "FMHomeRadiosCellID"
+    private let FMRadioHeaderViewID = "FMRadioHeaderViewID"
     
     var radioSquareArray: [FMHomeRadioSquareResult]?
-    var categoriesArray : [FMHomeCategory]?
+    var categoriesArray: [FMHomeCategory]?
+    var localRadioArray: [FMHomeLocalRadio]?
+    var topRadiosArray: [FMHomeLocalRadio]?
+    
     
     var isUnfold: Bool = false
     //电台模型展示，收起，正常状态
@@ -36,6 +41,8 @@ class FMHomeBroadcastController: UIViewController {
         collectV.dataSource = self
         collectV.register(UINib(nibName: "FMRadioSquareCell", bundle: nil), forCellWithReuseIdentifier: FMRadioSquareCellID)
         collectV.register(UINib(nibName: "FMRadioCategoriesCell", bundle: nil), forCellWithReuseIdentifier: FMRadioCategoriesCellID)
+        collectV.register(UINib(nibName: "FMHomeRadiosCell", bundle: nil), forCellWithReuseIdentifier: FMHomeRadiosCellID)
+        collectV.register(UINib(nibName: "FMRadioHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: FMRadioHeaderViewID)
         collectV.backgroundColor = FMDownColor
         return collectV
     }()
@@ -70,6 +77,8 @@ class FMHomeBroadcastController: UIViewController {
                     self.categoriesArray?.insert(self.foldModel, at: 7)
                     self.categoriesArray?.append(self.coverModel)
                     self.categoriesArray?.append(self.unFoldModel)
+                    self.localRadioArray = mappedObject.data?.localRadios
+                    self.topRadiosArray = mappedObject.data?.topRadios
                     self.collectView.reloadData()
                 }
             }
@@ -80,19 +89,24 @@ class FMHomeBroadcastController: UIViewController {
 extension FMHomeBroadcastController: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 2
+        return 4
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if section == 0 {
             return self.radioSquareArray?.count ?? 0
-        }else {
+        }else if section == 1 {
             if self.isUnfold {
                 return self.categoriesArray?.count ?? 0
             }else {
                 let num = self.categoriesArray?.count ?? 0
                 return num / 2
             }
+        }else if section == 2 {
+            return self.localRadioArray?.count ?? 0
+        }
+        else {
+            return self.topRadiosArray?.count ?? 0
         }
     }
     
@@ -101,26 +115,24 @@ extension FMHomeBroadcastController: UICollectionViewDelegateFlowLayout, UIColle
             let cell: FMRadioSquareCell = collectionView.dequeueReusableCell(withReuseIdentifier: FMRadioSquareCellID, for: indexPath) as! FMRadioSquareCell
             cell.radioSquareModel = self.radioSquareArray?[indexPath.row]
             return cell
-        }else {
+        }else if indexPath.section == 1 {
             let cell:FMRadioCategoriesCell = collectionView.dequeueReusableCell(withReuseIdentifier: FMRadioCategoriesCellID, for: indexPath) as! FMRadioCategoriesCell
             cell.itemModel = self.categoriesArray?[indexPath.row]
+            return cell
+        }else if indexPath.section == 2 {
+            let cell:FMHomeRadiosCell = collectionView.dequeueReusableCell(withReuseIdentifier: FMHomeRadiosCellID, for: indexPath) as! FMHomeRadiosCell
+            cell.itemModel = self.localRadioArray?[indexPath.row]
+            return cell
+        }
+        else {
+            let cell:FMHomeRadiosCell = collectionView.dequeueReusableCell(withReuseIdentifier: FMHomeRadiosCellID, for: indexPath) as! FMHomeRadiosCell
+            cell.itemModel = self.topRadiosArray?[indexPath.row]
             return cell
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.section == 1 {
-//            if indexPath.row == 7 || indexPath.row == 15{
-//                self.isUnfold = !self.isUnfold
-//                print(self.isUnfold)
-//                if self.isUnfold {
-//                    self.categoriesArray?.remove(at: 7)
-//                }else {
-//                    self.categoriesArray?.insert(self.foldModel, at: 7)
-//                }
-//                self.collectView.reloadData()
-//            }
-            
             if indexPath.row == 7 && self.isUnfold == false {
                 self.isUnfold = !self.isUnfold
                 self.categoriesArray?.remove(at: 7)
@@ -134,12 +146,23 @@ extension FMHomeBroadcastController: UICollectionViewDelegateFlowLayout, UIColle
         }
     }
     
+    //每个分区的内边距
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        if section == 1 || section == 0 {
+            return .zero
+        }
+        return UIEdgeInsets(top: 2, left: 0, bottom: 10, right: 0)
+    }
+    
     //item 的尺寸
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.section == 0 {
             return CGSize.init(width:FMScreenWidth / 5,height:90)
-        }else {
-            return CGSize.init(width: (FMScreenWidth - 6) / 4, height: 50)
+        } else if indexPath.section == 1 {
+            return CGSize.init(width: (FMScreenWidth - 6) / 4, height: 45)
+        }
+        else {
+            return CGSize.init(width: FMScreenWidth, height: 120)
         }
     }
     
@@ -161,5 +184,21 @@ extension FMHomeBroadcastController: UICollectionViewDelegateFlowLayout, UIColle
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let headV: FMRadioHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: FMRadioHeaderViewID, for: indexPath) as! FMRadioHeaderView
+        if indexPath.section == 2 {
+            headV.titleL.text = "本地"
+        }else {
+            headV.titleL.text = "广播"
+        }
+        return headV
+    }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        if section == 2 || section == 3 {
+            return CGSize.init(width: FMScreenWidth, height: 50)
+        }else {
+            return .zero
+        }
+    }
 }
