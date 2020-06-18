@@ -44,6 +44,9 @@ class FMHomeBroadcastController: UIViewController {
         collectV.register(UINib(nibName: "FMHomeRadiosCell", bundle: nil), forCellWithReuseIdentifier: FMHomeRadiosCellID)
         collectV.register(UINib(nibName: "FMRadioHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: FMRadioHeaderViewID)
         collectV.backgroundColor = FMDownColor
+        
+        collectV.uHead = URefreshHeader{ [weak self] in self?.setupRequest() }
+
         return collectV
     }()
     
@@ -52,7 +55,8 @@ class FMHomeBroadcastController: UIViewController {
 
         setupUI()
         setupLayout()
-        setupRequest()
+        self.collectView.uHead.beginRefreshing()
+//        setupRequest()
     }
     
     func setupUI() {
@@ -80,6 +84,7 @@ class FMHomeBroadcastController: UIViewController {
                     self.localRadioArray = mappedObject.data?.localRadios
                     self.topRadiosArray = mappedObject.data?.topRadios
                     self.collectView.reloadData()
+                    self.collectView.uHead.endRefreshing()
                 }
             }
         }
