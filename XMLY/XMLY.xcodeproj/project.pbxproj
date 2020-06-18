@@ -35,6 +35,12 @@
 		315360BD24937AA7002392BB /* ReplicatorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315360B324937AA7002392BB /* ReplicatorLayer.swift */; };
 		315360BE24937AA7002392BB /* URefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315360B524937AA7002392BB /* URefresh.swift */; };
 		315360BF24937AA7002392BB /* LBFMCustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315360B724937AA7002392BB /* LBFMCustomLabel.swift */; };
+		3154D9C3249B0C6800B8951D /* FMRadioSquareCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3154D9C1249B0C6800B8951D /* FMRadioSquareCell.swift */; };
+		3154D9C4249B0C6800B8951D /* FMRadioSquareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3154D9C2249B0C6800B8951D /* FMRadioSquareCell.xib */; };
+		3154D9C8249B103A00B8951D /* FMHomeBroadcastAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3154D9C7249B103A00B8951D /* FMHomeBroadcastAPI.swift */; };
+		3154D9CA249B185800B8951D /* FMRadiosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3154D9C9249B185800B8951D /* FMRadiosModel.swift */; };
+		3154D9CD249B342100B8951D /* FMRadioCategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3154D9CB249B342100B8951D /* FMRadioCategoriesCell.swift */; };
+		3154D9CE249B342100B8951D /* FMRadioCategoriesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3154D9CC249B342100B8951D /* FMRadioCategoriesCell.xib */; };
 		31FAE12D249766EE00C1E632 /* FMHomeRecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FAE12C249766EE00C1E632 /* FMHomeRecommendController.swift */; };
 		B87466738B6A314D40DDCA0E /* Pods_XMLY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B748A80F7136BE864B83D2 /* Pods_XMLY.framework */; };
 /* End PBXBuildFile section */
@@ -70,6 +76,12 @@
 		315360B324937AA7002392BB /* ReplicatorLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplicatorLayer.swift; sourceTree = "<group>"; };
 		315360B524937AA7002392BB /* URefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URefresh.swift; sourceTree = "<group>"; };
 		315360B724937AA7002392BB /* LBFMCustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBFMCustomLabel.swift; sourceTree = "<group>"; };
+		3154D9C1249B0C6800B8951D /* FMRadioSquareCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMRadioSquareCell.swift; sourceTree = "<group>"; };
+		3154D9C2249B0C6800B8951D /* FMRadioSquareCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FMRadioSquareCell.xib; sourceTree = "<group>"; };
+		3154D9C7249B103A00B8951D /* FMHomeBroadcastAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeBroadcastAPI.swift; sourceTree = "<group>"; };
+		3154D9C9249B185800B8951D /* FMRadiosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FMRadiosModel.swift; path = "XMLY/Class/Home/广播/FMRadiosModel.swift"; sourceTree = SOURCE_ROOT; };
+		3154D9CB249B342100B8951D /* FMRadioCategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMRadioCategoriesCell.swift; sourceTree = "<group>"; };
+		3154D9CC249B342100B8951D /* FMRadioCategoriesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FMRadioCategoriesCell.xib; sourceTree = "<group>"; };
 		31FAE12C249766EE00C1E632 /* FMHomeRecommendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeRecommendController.swift; sourceTree = "<group>"; };
 		33FADE0CB99E4B05391F506A /* Pods-XMLY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMLY.debug.xcconfig"; path = "Target Support Files/Pods-XMLY/Pods-XMLY.debug.xcconfig"; sourceTree = "<group>"; };
 		58B748A80F7136BE864B83D2 /* Pods_XMLY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMLY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +154,9 @@
 			isa = PBXGroup;
 			children = (
 				315340072499CA1A005870ED /* FMHomeBroadcastController.swift */,
+				3154D9C6249B101C00B8951D /* API */,
+				3154D9C5249B0DDB00B8951D /* Model */,
+				3154D9C0249B0C5200B8951D /* View */,
 			);
 			path = "广播";
 			sourceTree = "<group>";
@@ -268,6 +283,33 @@
 			path = CustomLabel;
 			sourceTree = "<group>";
 		};
+		3154D9C0249B0C5200B8951D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3154D9C1249B0C6800B8951D /* FMRadioSquareCell.swift */,
+				3154D9C2249B0C6800B8951D /* FMRadioSquareCell.xib */,
+				3154D9CB249B342100B8951D /* FMRadioCategoriesCell.swift */,
+				3154D9CC249B342100B8951D /* FMRadioCategoriesCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3154D9C5249B0DDB00B8951D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3154D9C9249B185800B8951D /* FMRadiosModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3154D9C6249B101C00B8951D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3154D9C7249B103A00B8951D /* FMHomeBroadcastAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		31FAE12E2497690500C1E632 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,7 +407,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3154D9CE249B342100B8951D /* FMRadioCategoriesCell.xib in Resources */,
 				31536097249367A0002392BB /* LaunchScreen.storyboard in Resources */,
+				3154D9C4249B0C6800B8951D /* FMRadioSquareCell.xib in Resources */,
 				31536094249367A0002392BB /* Assets.xcassets in Resources */,
 				31536092249367A0002392BB /* Main.storyboard in Resources */,
 			);
@@ -430,7 +474,11 @@
 				315319B22498A10300658B55 /* FMHomeClassifyCell.swift in Sources */,
 				315360B924937AA7002392BB /* WRCustomNavigationBar.swift in Sources */,
 				315360BB24937AA7002392BB /* WRCycleScrollView.swift in Sources */,
+				3154D9CD249B342100B8951D /* FMRadioCategoriesCell.swift in Sources */,
 				3152CD4724975CB500C407C4 /* FMArrayUtils.swift in Sources */,
+				3154D9C3249B0C6800B8951D /* FMRadioSquareCell.swift in Sources */,
+				3154D9CA249B185800B8951D /* FMRadiosModel.swift in Sources */,
+				3154D9C8249B103A00B8951D /* FMHomeBroadcastAPI.swift in Sources */,
 				3153608B249367A0002392BB /* AppDelegate.swift in Sources */,
 				315360BD24937AA7002392BB /* ReplicatorLayer.swift in Sources */,
 				315360BE24937AA7002392BB /* URefresh.swift in Sources */,

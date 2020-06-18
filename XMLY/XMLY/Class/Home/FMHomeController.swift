@@ -27,8 +27,8 @@ class FMHomeController: UIViewController {
         style.bottomLineColor = FMButtonColor
         style.bottomLineHeight = 2
         
-        let titles = ["推荐","分类","会员","直播","广播"]
-        let viewControllers:[UIViewController] = [FMHomeClassifyController(),FMHomeBroadcastController(),FMHomeRecommendController(),FMHomeRecommendController(),FMHomeRecommendController()]
+        let titles = ["广播","分类","会员","直播","推荐"]
+        let viewControllers:[UIViewController] = [ FMHomeBroadcastController(),FMHomeClassifyController(),FMHomeRecommendController(),FMHomeRecommendController(),FMHomeRecommendController()]
         for vc in viewControllers{
             self.addChild(vc)
         }
