@@ -47,6 +47,9 @@
 		3154D9D6249B598300B8951D /* FMRadioHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3154D9D4249B598300B8951D /* FMRadioHeaderView.xib */; };
 		316EC5A0249C579D00E328EF /* FMMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316EC59F249C579D00E328EF /* FMMineController.swift */; };
 		316EC5A2249C633500E328EF /* FMMineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316EC5A1249C633500E328EF /* FMMineHeaderView.swift */; };
+		316EC5A6249C94D500E328EF /* FMMineMakeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316EC5A4249C94D500E328EF /* FMMineMakeCell.swift */; };
+		316EC5A7249C94D500E328EF /* FMMineMakeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 316EC5A5249C94D500E328EF /* FMMineMakeCell.xib */; };
+		316EC5A9249CAF0E00E328EF /* FMCVLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316EC5A8249CAF0E00E328EF /* FMCVLayerView.swift */; };
 		31FAE12D249766EE00C1E632 /* FMHomeRecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FAE12C249766EE00C1E632 /* FMHomeRecommendController.swift */; };
 		B87466738B6A314D40DDCA0E /* Pods_XMLY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B748A80F7136BE864B83D2 /* Pods_XMLY.framework */; };
 /* End PBXBuildFile section */
@@ -94,6 +97,9 @@
 		3154D9D4249B598300B8951D /* FMRadioHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FMRadioHeaderView.xib; sourceTree = "<group>"; };
 		316EC59F249C579D00E328EF /* FMMineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMMineController.swift; sourceTree = "<group>"; };
 		316EC5A1249C633500E328EF /* FMMineHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMMineHeaderView.swift; sourceTree = "<group>"; };
+		316EC5A4249C94D500E328EF /* FMMineMakeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMMineMakeCell.swift; sourceTree = "<group>"; };
+		316EC5A5249C94D500E328EF /* FMMineMakeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FMMineMakeCell.xib; sourceTree = "<group>"; };
+		316EC5A8249CAF0E00E328EF /* FMCVLayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMCVLayerView.swift; sourceTree = "<group>"; };
 		31FAE12C249766EE00C1E632 /* FMHomeRecommendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeRecommendController.swift; sourceTree = "<group>"; };
 		33FADE0CB99E4B05391F506A /* Pods-XMLY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMLY.debug.xcconfig"; path = "Target Support Files/Pods-XMLY/Pods-XMLY.debug.xcconfig"; sourceTree = "<group>"; };
 		58B748A80F7136BE864B83D2 /* Pods_XMLY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMLY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -339,7 +345,10 @@
 		316EC5A3249C819700E328EF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				316EC5A8249CAF0E00E328EF /* FMCVLayerView.swift */,
 				316EC5A1249C633500E328EF /* FMMineHeaderView.swift */,
+				316EC5A4249C94D500E328EF /* FMMineMakeCell.swift */,
+				316EC5A5249C94D500E328EF /* FMMineMakeCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -446,6 +455,7 @@
 				31536097249367A0002392BB /* LaunchScreen.storyboard in Resources */,
 				3154D9C4249B0C6800B8951D /* FMRadioSquareCell.xib in Resources */,
 				31536094249367A0002392BB /* Assets.xcassets in Resources */,
+				316EC5A7249C94D500E328EF /* FMMineMakeCell.xib in Resources */,
 				31536092249367A0002392BB /* Main.storyboard in Resources */,
 				3154D9D2249B4D7600B8951D /* FMHomeRadiosCell.xib in Resources */,
 			);
@@ -503,6 +513,7 @@
 				315360B824937AA7002392BB /* WRNavigationBar.swift in Sources */,
 				315340052499BB79005870ED /* FMHomeClassifyHeaderView.swift in Sources */,
 				316EC5A0249C579D00E328EF /* FMMineController.swift in Sources */,
+				316EC5A6249C94D500E328EF /* FMMineMakeCell.swift in Sources */,
 				31FAE12D249766EE00C1E632 /* FMHomeRecommendController.swift in Sources */,
 				315360AA2493786E002392BB /* XMLYHeader.swift in Sources */,
 				315319B024989B2A00658B55 /* FMHomeClassifyController.swift in Sources */,
@@ -521,6 +532,7 @@
 				315360BD24937AA7002392BB /* ReplicatorLayer.swift in Sources */,
 				315360BE24937AA7002392BB /* URefresh.swift in Sources */,
 				315319B92498BF0600658B55 /* FMHomeClassifyAPI.swift in Sources */,
+				316EC5A9249CAF0E00E328EF /* FMCVLayerView.swift in Sources */,
 				3152CD43249722D000C407C4 /* FMIrregularityBasicContentView.swift in Sources */,
 				3152CD3F24971F6900C407C4 /* FMBasicContentView.swift in Sources */,
 				315319B42498A90B00658B55 /* FMHomeClassifyModel.swift in Sources */,

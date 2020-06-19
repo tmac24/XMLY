@@ -32,7 +32,7 @@ class FMHomeController: UIViewController {
         for vc in viewControllers{
             self.addChild(vc)
         }
-        let pageView = DNSPageView(frame: CGRect(x: 0, y: FMNavBarHeight+20, width: FMScreenWidth, height: FMScreenHeight - FMNavBarHeight - FMTarBarHeight - 44 - 8), style: style, titles: titles, childViewControllers: viewControllers)
+        let pageView = DNSPageView(frame: CGRect(x: 0, y: FMNavBarHeight, width: FMScreenWidth, height: FMScreenHeight - FMNavBarHeight - FMTarBarHeight), style: style, titles: titles, childViewControllers: viewControllers)
         
         view.addSubview(pageView)
         

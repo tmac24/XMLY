@@ -59,18 +59,19 @@ class FMMineHeaderView: UIView {
          return view
      }()
      
-     // shopView上细线
-     private lazy var lineView:UIView = {
-         let view = UIView()
-        view.backgroundColor = UIColor.init(red: 240, green: 240, blue: 240, alpha: 1)
-         return view
-     }()
+    // shopView上细线
+    private lazy var lineView:UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.init(red: 240/255, green: 240/255, blue: 240/255, alpha: 1)
+        return view
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         setupUI()
         setupLayout()
+        setUpShopView()
     }
     
     required init?(coder: NSCoder) {
@@ -99,14 +100,14 @@ class FMMineHeaderView: UIView {
         self.nickName.snp.makeConstraints { make in
             make.left.equalTo(self.imageView.snp.right).offset(10)
             make.top.equalTo(self.imageView.snp.top).offset(10)
-            make.width.equalTo(100)
+            make.width.equalTo(300)
             make.height.equalTo(20)
         }
         
         self.fans.snp.makeConstraints { (make) in
             make.left.equalTo(self.nickName)
             make.bottom.equalTo(self.imageView.snp.bottom).offset(-10)
-            make.width.equalTo(80)
+            make.width.equalTo(100)
             make.height.equalTo(20)
         }
         
@@ -138,8 +139,41 @@ class FMMineHeaderView: UIView {
     }
     
     func setUpShopView() {
-//        let margin:CGFloat = 
-        
+        let margin:CGFloat = FMScreenWidth / 10
+        let titleArray = ["已购","优惠券","喜点","直播喜钻","我的钱包"]
+//        FMPrint(titleArray)
+        let dataArray = ["10","2","88","66","钱包"]
+        for index in 0..<titleArray.count {
+            let button = UIButton.init(frame: CGRect(x: margin*CGFloat(index)*2+margin/2, y: 10, width: margin, height: margin))
+            if index == 4 {
+                button.setImage(UIImage(named: dataArray[index]), for: UIControl.State.normal)
+            }else {
+                button.setTitle(dataArray[index], for: UIControl.State.normal)
+                button.setTitleColor(UIColor.black, for: UIControl.State.normal)
+                button.titleLabel?.font = UIFont.systemFont(ofSize: 25)
+            }
+            self.shopView.addSubview(button)
+            
+            let titleL = UILabel()
+            titleL.textAlignment = .center
+            titleL.text = titleArray[index]
+            titleL.textColor = UIColor.gray
+            titleL.font = UIFont.systemFont(ofSize: 15)
+            self.shopView.addSubview(titleL)
+            
+            titleL.snp.makeConstraints { make in
+                make.centerX.equalTo(button)
+                make.width.equalTo(margin+30)
+                make.top.equalTo(button.snp.bottom).offset(10)
+            }
+            
+            button.tag = index
+            button.addTarget(self, action: #selector(gridBtnClick(button:)), for: UIControl.Event.touchUpInside)
+        }
+    }
+    
+    @objc func gridBtnClick(button:UIButton) {
+        FMPrint(button.tag)
     }
 
 }
