@@ -54,7 +54,7 @@ class MainTabViewController: ESTabBarController {
         let listen = FMHomeController()
         let play = FMHomeController()
         let find = FMHomeController()
-        let mine = FMHomeController()
+        let mine = FMMineController()
         
         home.tabBarItem = ESTabBarItem.init(FMIrregularityBasicContentView(), title: "首页", image: UIImage(named: "home"), selectedImage: UIImage(named: "home_1"))
         listen.tabBarItem = ESTabBarItem.init(FMIrregularityBasicContentView(), title: "我听", image: UIImage(named: "find"), selectedImage: UIImage(named: "find_1"))

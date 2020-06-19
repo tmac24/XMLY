@@ -75,14 +75,16 @@ class FMHomeBroadcastController: UIViewController {
             if case let .success(response) = result {
                 let data = try? response.mapJSON()
                 let json = JSON(data!)
-                if let mappedObject = JSONDeserializer<FMHomeBroadcastModel>.deserializeFrom(json: json.description) {
-                    self.radioSquareArray = mappedObject.data?.radioSquareResults
-                    self.categoriesArray = mappedObject.data?.categories
-                    self.categoriesArray?.insert(self.foldModel, at: 7)
+                if let object = FMHomeBroadcastModel.deserialize(from: json.description) {
+                    self.radioSquareArray = object.data?.radioSquareResults
+                    self.categoriesArray = object.data?.categories
+                    if self.isUnfold == false {
+                        self.categoriesArray?.insert(self.foldModel, at: 7)
+                    }
                     self.categoriesArray?.append(self.coverModel)
                     self.categoriesArray?.append(self.unFoldModel)
-                    self.localRadioArray = mappedObject.data?.localRadios
-                    self.topRadiosArray = mappedObject.data?.topRadios
+                    self.localRadioArray = object.data?.localRadios
+                    self.topRadiosArray = object.data?.topRadios
                     self.collectView.reloadData()
                     self.collectView.uHead.endRefreshing()
                 }
@@ -162,7 +164,7 @@ extension FMHomeBroadcastController: UICollectionViewDelegateFlowLayout, UIColle
     //item 的尺寸
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.section == 0 {
-            return CGSize.init(width:FMScreenWidth / 5,height:90)
+            return CGSize.init(width:FMScreenWidth / 5,height: 90)
         } else if indexPath.section == 1 {
             return CGSize.init(width: (FMScreenWidth - 6) / 4, height: 45)
         }
@@ -189,6 +191,7 @@ extension FMHomeBroadcastController: UICollectionViewDelegateFlowLayout, UIColle
         }
     }
     
+     //header footer View
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let headV: FMRadioHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: FMRadioHeaderViewID, for: indexPath) as! FMRadioHeaderView
         if indexPath.section == 2 {
@@ -199,6 +202,7 @@ extension FMHomeBroadcastController: UICollectionViewDelegateFlowLayout, UIColle
         return headV
     }
     
+    //header footer 宽高
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         if section == 2 || section == 3 {
             return CGSize.init(width: FMScreenWidth, height: 50)

@@ -21,7 +21,7 @@ let FMScreenHeight = UIScreen.main.bounds.size.height
 let FMButtonColor = UIColor(red: 242/255.0, green: 77/255.0, blue: 51/255.0, alpha: 1)
 let FMDownColor = UIColor.init(red: 240/255.0, green: 241/255.0, blue: 244/255.0, alpha: 1)
 
-let isIphoneX = FMScreenHeight == 812 ? true : false
+let isIphoneX = isiPhoneXScreen()
 
 let FMNavBarHeight : CGFloat = isIphoneX ? 88 : 64
 let FMTarBarHeight : CGFloat = isIphoneX ? 49 + 34 : 49
