@@ -9,6 +9,7 @@
 import UIKit
 import HandyJSON
 import SwiftyJSON
+import SVProgressHUD
 
 class FMHomeBroadcastController: UIViewController {
 
@@ -71,25 +72,43 @@ class FMHomeBroadcastController: UIViewController {
     }
     
     func setupRequest() {
-        FMHomeBroadcastAPIProvider.request(.homeBroadcastList) { result in
-            if case let .success(response) = result {
-                let data = try? response.mapJSON()
-                let json = JSON(data!)
-                if let object = FMHomeBroadcastModel.deserialize(from: json.description) {
-                    self.radioSquareArray = object.data?.radioSquareResults
-                    self.categoriesArray = object.data?.categories
-                    if self.isUnfold == false {
-                        self.categoriesArray?.insert(self.foldModel, at: 7)
-                    }
-                    self.categoriesArray?.append(self.coverModel)
-                    self.categoriesArray?.append(self.unFoldModel)
-                    self.localRadioArray = object.data?.localRadios
-                    self.topRadiosArray = object.data?.topRadios
-                    self.collectView.reloadData()
-                    self.collectView.uHead.endRefreshing()
+        HttpDatas.shareInstance.requestDatas(.get, URLString: "http://live.ximalaya.com/live-web/v5/homepage", paramaters: nil) { response in
+            let json = JSON(response)
+            if let object = FMHomeBroadcastModel.deserialize(from: json.description) {
+                self.radioSquareArray = object.data?.radioSquareResults
+                self.categoriesArray = object.data?.categories
+                if self.isUnfold == false {
+                    self.categoriesArray?.insert(self.foldModel, at: 7)
                 }
+                self.categoriesArray?.append(self.coverModel)
+                self.categoriesArray?.append(self.unFoldModel)
+                self.localRadioArray = object.data?.localRadios
+                self.topRadiosArray = object.data?.topRadios
+                self.collectView.reloadData()
+                self.collectView.uHead.endRefreshing()
             }
         }
+        
+        
+//        FMHomeBroadcastAPIProvider.request(.homeBroadcastList) { result in
+//            if case let .success(response) = result {
+//                let data = try? response.mapJSON()
+//                let json = JSON(data!)
+//                if let object = FMHomeBroadcastModel.deserialize(from: json.description) {
+//                    self.radioSquareArray = object.data?.radioSquareResults
+//                    self.categoriesArray = object.data?.categories
+//                    if self.isUnfold == false {
+//                        self.categoriesArray?.insert(self.foldModel, at: 7)
+//                    }
+//                    self.categoriesArray?.append(self.coverModel)
+//                    self.categoriesArray?.append(self.unFoldModel)
+//                    self.localRadioArray = object.data?.localRadios
+//                    self.topRadiosArray = object.data?.topRadios
+//                    self.collectView.reloadData()
+//                    self.collectView.uHead.endRefreshing()
+//                }
+//            }
+//        }
     }
 }
 

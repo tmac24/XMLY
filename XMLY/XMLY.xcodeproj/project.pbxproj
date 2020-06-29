@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3151D48724A981E5008210A3 /* HttpDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3151D48624A981E5008210A3 /* HttpDatas.swift */; };
 		3152CD3824971A6200C407C4 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3152CD3724971A6200C407C4 /* MainTabViewController.swift */; };
 		3152CD3A24971ACC00C407C4 /* FMHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3152CD3924971ACC00C407C4 /* FMHomeController.swift */; };
 		3152CD3D24971D4B00C407C4 /* FMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3152CD3C24971D4B00C407C4 /* FMNavigationController.swift */; };
@@ -45,6 +46,7 @@
 		3154D9D2249B4D7600B8951D /* FMHomeRadiosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3154D9D0249B4D7600B8951D /* FMHomeRadiosCell.xib */; };
 		3154D9D5249B598300B8951D /* FMRadioHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3154D9D3249B598300B8951D /* FMRadioHeaderView.swift */; };
 		3154D9D6249B598300B8951D /* FMRadioHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3154D9D4249B598300B8951D /* FMRadioHeaderView.xib */; };
+		315A798624A83C7B00605C76 /* YYNetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315A798524A83C7B00605C76 /* YYNetModel.swift */; };
 		316EC5A0249C579D00E328EF /* FMMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316EC59F249C579D00E328EF /* FMMineController.swift */; };
 		316EC5A2249C633500E328EF /* FMMineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316EC5A1249C633500E328EF /* FMMineHeaderView.swift */; };
 		316EC5A6249C94D500E328EF /* FMMineMakeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316EC5A4249C94D500E328EF /* FMMineMakeCell.swift */; };
@@ -55,6 +57,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3151D48624A981E5008210A3 /* HttpDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpDatas.swift; sourceTree = "<group>"; };
 		3152CD3724971A6200C407C4 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		3152CD3924971ACC00C407C4 /* FMHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeController.swift; sourceTree = "<group>"; };
 		3152CD3C24971D4B00C407C4 /* FMNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMNavigationController.swift; sourceTree = "<group>"; };
@@ -95,6 +98,7 @@
 		3154D9D0249B4D7600B8951D /* FMHomeRadiosCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FMHomeRadiosCell.xib; sourceTree = "<group>"; };
 		3154D9D3249B598300B8951D /* FMRadioHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMRadioHeaderView.swift; sourceTree = "<group>"; };
 		3154D9D4249B598300B8951D /* FMRadioHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FMRadioHeaderView.xib; sourceTree = "<group>"; };
+		315A798524A83C7B00605C76 /* YYNetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYNetModel.swift; sourceTree = "<group>"; };
 		316EC59F249C579D00E328EF /* FMMineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMMineController.swift; sourceTree = "<group>"; };
 		316EC5A1249C633500E328EF /* FMMineHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMMineHeaderView.swift; sourceTree = "<group>"; };
 		316EC5A4249C94D500E328EF /* FMMineMakeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMMineMakeCell.swift; sourceTree = "<group>"; };
@@ -200,6 +204,7 @@
 		31536089249367A0002392BB /* XMLY */ = {
 			isa = PBXGroup;
 			children = (
+				315A798424A83C5300605C76 /* Netting */,
 				315360A22493735A002392BB /* AppDelegate */,
 				3152CD3B24971D0C00C407C4 /* MainController */,
 				3153609F24937359002392BB /* Common */,
@@ -331,6 +336,15 @@
 				3154D9C7249B103A00B8951D /* FMHomeBroadcastAPI.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		315A798424A83C5300605C76 /* Netting */ = {
+			isa = PBXGroup;
+			children = (
+				315A798524A83C7B00605C76 /* YYNetModel.swift */,
+				3151D48624A981E5008210A3 /* HttpDatas.swift */,
+			);
+			path = Netting;
 			sourceTree = "<group>";
 		};
 		316EC59E249C574C00E328EF /* Mine我的 */ = {
@@ -517,6 +531,7 @@
 				31FAE12D249766EE00C1E632 /* FMHomeRecommendController.swift in Sources */,
 				315360AA2493786E002392BB /* XMLYHeader.swift in Sources */,
 				315319B024989B2A00658B55 /* FMHomeClassifyController.swift in Sources */,
+				315A798624A83C7B00605C76 /* YYNetModel.swift in Sources */,
 				315360BA24937AA7002392BB /* WRProxy.swift in Sources */,
 				3154D9D1249B4D7600B8951D /* FMHomeRadiosCell.swift in Sources */,
 				3152CD3824971A6200C407C4 /* MainTabViewController.swift in Sources */,
@@ -536,6 +551,7 @@
 				3152CD43249722D000C407C4 /* FMIrregularityBasicContentView.swift in Sources */,
 				3152CD3F24971F6900C407C4 /* FMBasicContentView.swift in Sources */,
 				315319B42498A90B00658B55 /* FMHomeClassifyModel.swift in Sources */,
+				3151D48724A981E5008210A3 /* HttpDatas.swift in Sources */,
 				315360BF24937AA7002392BB /* LBFMCustomLabel.swift in Sources */,
 				316EC5A2249C633500E328EF /* FMMineHeaderView.swift in Sources */,
 				3154D9D5249B598300B8951D /* FMRadioHeaderView.swift in Sources */,

@@ -13,6 +13,7 @@ import SnapKit
 import SwiftyJSON
 import HandyJSON
 import SwiftMessages
+import Alamofire
 
 
 let FMScreenWidth = UIScreen.main.bounds.size.width

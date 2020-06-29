@@ -32,4 +32,6 @@ target ‘XMLY’ do
   pod 'SVProgressHUD'
   #播放网络音频
   pod 'StreamingKit'
+  
+  pod 'Alamofire'
 end
