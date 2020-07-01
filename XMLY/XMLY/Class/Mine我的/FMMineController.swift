@@ -22,6 +22,8 @@ class FMMineController: UIViewController {
                 [["icon":"意见反馈", "title": "帮助与反馈"]]]
     }()
     
+    // 懒加载tableView
+    
     lazy var tableView: UITableView = {
         let tableV = UITableView.init(frame: .zero, style: UITableView.Style.plain)
         tableV.contentInset = UIEdgeInsets(top: CGFloat(-FMNavBarHeight), left: 0, bottom: 0, right: 0)
@@ -35,6 +37,7 @@ class FMMineController: UIViewController {
         return tableV
     }()
     
+    // 懒加载顶部头视图
     lazy var headerView: FMMineHeaderView = {
         let view = FMMineHeaderView.init(frame: CGRect(x: 0, y: 0, width: FMScreenWidth, height: 300))
         return view
@@ -85,12 +88,14 @@ class FMMineController: UIViewController {
         return button
     }()
     
+    // - 导航栏左按钮点击事件
     @objc func leftBarButtonClick() {
         print("BarButtonClick")
     }
     
 }
 
+// - 代理
 extension FMMineController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 4
