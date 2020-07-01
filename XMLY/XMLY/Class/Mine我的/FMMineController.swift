@@ -8,6 +8,8 @@
 
 import UIKit
 
+let kNavBarBottom = WRNavigationBar.navBarBottom()
+
 class FMMineController: UIViewController {
     private let TableViewCellID = "TableViewCellID"
     private let FMMineMakeCellID = "FMMineMakeCellID"
@@ -40,14 +42,20 @@ class FMMineController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupUI()
         setupLayout()
     }
     
     func setupUI() {
-        navBarBarTintColor = UIColor.init(red: 247/255.0, green: 247/255.0, blue: 247/255.0, alpha: 1.0)
+        // 设置导航栏颜色
+//        navBarBarTintColor = UIColor.init(red: 247/255.0, green: 247/255.0, blue: 247/255.0, alpha: 1.0)
+        // 设置导航栏透明度
         navBarBackgroundAlpha = 0
+        // 导航栏左右item
+        navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: leftBarButton)
+        navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: rightBarButton)
+        
         
         view.backgroundColor = UIColor.white
         view.addSubview(self.tableView)
@@ -58,7 +66,29 @@ class FMMineController: UIViewController {
             make.left.top.bottom.right.equalToSuperview()
         }
     }
-
+    
+    // - 导航栏左边按钮
+    lazy var leftBarButton: UIButton = {
+        let button = UIButton.init(type: UIButton.ButtonType.custom)
+        button.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        button.setImage(UIImage(named: "msg"), for: UIControl.State.normal)
+        button.addTarget(self, action: #selector(leftBarButtonClick), for: UIControl.Event.touchUpInside)
+        return button
+    }()
+    
+    // - 导航栏右边按钮
+    lazy var rightBarButton: UIButton = {
+        let button = UIButton.init(type: UIButton.ButtonType.custom)
+        button.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        button.setImage(UIImage(named: "set"), for: UIControl.State.normal)
+        button.addTarget(self, action: #selector(leftBarButtonClick), for: UIControl.Event.touchUpInside)
+        return button
+    }()
+    
+    @objc func leftBarButtonClick() {
+        print("BarButtonClick")
+    }
+    
 }
 
 extension FMMineController: UITableViewDataSource, UITableViewDelegate {
@@ -117,6 +147,14 @@ extension FMMineController: UITableViewDataSource, UITableViewDelegate {
         return UIView()
     }
     
-    
-    
+    // 控制向上滚动显示导航栏标题和左右按钮
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        if offsetY > 0 {
+            let alpha = offsetY / CGFloat(kNavBarBottom)
+            navBarBackgroundAlpha = alpha
+        }else {
+            navBarBackgroundAlpha = 0
+        }
+    }
 }
