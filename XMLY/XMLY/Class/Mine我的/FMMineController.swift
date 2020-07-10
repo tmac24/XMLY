@@ -48,6 +48,18 @@ class FMMineController: UIViewController {
         
         setupUI()
         setupLayout()
+        
+//        let soreDic = ["语文" : 91,
+//                       "数学" : 83,
+//                       "英语" : 76
+//                     ]
+        
+//        let ximi = People.shareInstance.initPeole(pname: "小明", page: 18, psoreDict: soreDic, pcolorArray: ["white", "black", "blue", "red"])
+        
+        let ximing = People(name: "小明", age: 18)
+        print(ximing.name!, ximing.age)
+        
+    
     }
     
     func setupUI() {
