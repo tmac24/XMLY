@@ -26,11 +26,16 @@ class LBFMCustomLabel: UILabel {
 }
 
 func isiPhoneXScreen() -> Bool {
-        guard #available(iOS 11.0, *) else {
+    if #available(iOS 11, *) {
+        guard let w = UIApplication.shared.delegate?.window, let unwrapedWindow = w else {
             return false
         }
- 
- return UIApplication.shared.windows[0].safeAreaInsets != UIEdgeInsets.zero
+        if unwrapedWindow.safeAreaInsets.left > 0 || unwrapedWindow.safeAreaInsets.bottom > 0 {
+            print(unwrapedWindow.safeAreaInsets)
+            return true
+        }
+    }
+    return false
 }
 
 //封装的日志输出功能（T表示不指定日志信息参数类型）
