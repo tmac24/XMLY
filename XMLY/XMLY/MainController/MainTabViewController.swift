@@ -51,7 +51,7 @@ class MainTabViewController: ESTabBarController {
         }
         
         let home = FMHomeController()
-        let listen = FMHomeController()
+        let listen = SwiftGGViewController()
         let play = FMHomeController()
         let find = FMHomeController()
         let mine = FMMineController()
