@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>商品档案文档</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">商品档案</h1>
+
+<ul>
+<li><p>按照功能模式来分</p>
+
+<ul>
+<li>新增模式</li>
+<li>编辑模式</li>
+<li>查看模式</li>
+</ul>
+
+<p>其中，新增模式，编辑模式用的是同一套UI风格，查看模式是另一种UI风格</p></li>
+</ul>
+
+<p>商品档案包括以下属性
+
+<img src="截屏2020-06-22 下午2.14.22.png" alt="">
+接下来，根据业务的复杂性逐一说明</p>
+
+<hr>
+
+<h3 id="toc_1">基本单位</h3>
+
+<p>商品单位的标识，只有一个单位。比如：1个，3只等</p>
+
+<h3 id="toc_2">辅助单位</h3>
+
+<p>有时候商品只有基本单位是不够的，比如：酒1箱5瓶 这时候需要辅助单位。辅助单位也是sku2，属于规格级。后面商品规格会讲到。</p>
+
+<hr>
+
+<h3 id="toc_3">商品规格</h3>
+
+<p>本系统的商品规格有5级</p>
+
+<ul>
+<li>color</li>
+<li>size</li>
+<li>cup</li>
+<li>sku1</li>
+<li>sku2</li>
+</ul>
+
+<p>color,size是有云端库的，其他都没有</p>
+
+<h5 id="toc_4">skuStr：服务器返回的字段,表示规格级。用于商品规格，库存预警，价格管理。</h5>
+
+<p>例如：1001_ 1003_ 1006_ 1012_ 1056  <strong>注意</strong> 此顺序不可乱 </p>
+
+<ul>
+<li>1001表示color</li>
+<li>1003表示size</li>
+<li>1006表示cup</li>
+<li>1012表示sku1</li>
+<li>1056表示sku2</li>
+</ul>
+
+<p><img src="%E6%88%AA%E5%B1%8F2020-06-22%20%E4%B8%8B%E5%8D%884.11.31.png" alt=""></p>
+
+<hr>
+
+<h3 id="toc_5">微商城设置</h3>
+
+<p>此模块用于设置网页商城</p>
+
+<ul>
+<li>商品分享说明</li>
+<li>微商城图片</li>
+</ul>
+
+<hr>
+
+<h3 id="toc_6">价格管理</h3>
+
+<p>依赖于商品规格，价格类型根据本地数据库表查询</p>
+
+<ul>
+<li>基本价格（未开启多规格：无规格单单位）</li>
+<li>统一定价（已开启多规格：无规格多单位）</li>
+<li>特殊定价（已开启多规格：多规格多单位/多规格单单位）</li>
+</ul>
+
+<hr>
+
+<h3 id="toc_7">库存</h3>
+
+<p>设置本地仓库的成本价和库存数量</p>
+
+<h3 id="toc_8">库存预警</h3>
+
+<p>依赖于商品规格 设置本地仓库的库存上限和下限</p>
+
+<hr>
+
+<h3 id="toc_9">条形码</h3>
+
+<ul>
+<li>商品条形码 （普通商品级别）</li>
+<li>规格条形码（商品的规格级别）</li>
+</ul>
+
+<hr>
+
+<h3 id="toc_10">属性</h3>
+
+<p>用于定义商品的属性，例如季节性的商品</p>
+
+<ul>
+<li>单选</li>
+<li>数值</li>
+<li>文本</li>
+<li>日期</li>
+<li>多选</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_11">从项目工程了解商品档案</h2>
+
+<p>整个商品档案分为四个部分,文件还是很多的
+<img src="Snip20200623_4.png" alt=""></p>
+
+<hr>
+
+<h3 id="toc_12">本地数据库</h3>
+
+<p>由于本地是有数据库的，商品的一些基本信息都存在数据库中，用的时候需要我们自己查询本地数据库，本地数据库是我们登陆软件之后就会下载到本地，供我们增删改查。</p>
+
+<p>以下是一些常用的表</p>
+
+<div><pre><code class="language-none">#pragma mark - 本地数据库查询
+
+//获取供应商
+- (void)getSupplyArray {
+    YYDBManager * db = [YYDBManager sharedManager];
+    _supplyArray = [NSMutableArray arrayWithArray:[db getSupply_noStop:YES]];
+}
+
+//获取价格
+- (void)getPriceArray {
+    YYDBManager * db = [YYDBManager sharedManager];
+    _priceTypeArray = [NSMutableArray arrayWithArray:[db getPriceType]];
+}
+
+//获取单位
+- (void)getUnitArray {
+    YYDBManager * dbManger = [YYDBManager sharedManager];
+    _unitArray = [NSMutableArray arrayWithArray:[dbManger getUnit]];
+}
+
+//获取仓库
+- (void)getStoreArray {
+    _storeArray = [NSMutableArray array];
+    YYDBManager * db = [YYDBManager sharedManager];
+    NSArray * temp = [db getStore_noStop:YES];
+    for (storeModel * d in temp)
+    {
+        XQWareHouseModel * model = [XQWareHouseModel new];
+        model.StoreID = (int)d.storeid;
+        model.StoreName = d.storename;
+        [self.storeArray addObject:model];
+    }
+}
+</code></pre></div>
+
+<hr>
+
+<h3 id="toc_13">新增、编辑</h3>
+
+<p>商品新增和商品编辑用的都是一套代码，界面风格都是一样的
+<img src="Snip20200623_5.png" alt=""></p>
+
+<ul>
+<li>ISManualAddGoodsPresenter用于处理数据,包括数据库的查询帮助控制器减轻压力，</li>
+<li>服务返回的数据都是id，需要通过id查询本地数据库，获取对应的名称等</li>
+<li>BindCell中的文件是cell的类扩展，用来绑定数据</li>
+<li>二级界面跳转含有原生和H5，以下二级界面为h5
+
+<ul>
+<li>基本单位，辅助单位</li>
+<li>统一定价</li>
+<li>默认供应商</li>
+<li>商品规格设置</li>
+<li>商品属性设置</li>
+</ul></li>
+</ul>
+
+<hr>
+
+<h3 id="toc_14">查看</h3>
+
+<p>由于商品查看页面是另一种UI风格。所以需要另一套代码
+<img src="Snip20200623_6.png" alt="">
+数据组装</p>
+
+<div><pre><code class="language-none">NSMutableArray *tmpArray = [NSMutableArray array];
+ //第零组：商品名称,货号或编号,商品分类
+[tmpArray addObject:[self dictWithTitle:@&quot;商品名称&quot; subTitle:_model.GoodsName cellType:0 skipID:nil]];
+[tmpArray addObject:[self dictWithTitle:@&quot;货号或编号&quot; subTitle:_model.GoodsCode cellType:0 skipID:nil]];
+[tmpArray addObject:[self dictWithTitle:@&quot;商品分类&quot; subTitle:[self nillWithContent:_model.ClassNameStr] cellType:0 skipID:nil]];
+[_sectionArray addObject:tmpArray];
+
+//第一组：基本单位，辅助单位，多规格
+tmpArray = [NSMutableArray array];
+[tmpArray addObject:[self dictWithTitle:@&quot;基本单位&quot; subTitle:_model.GoodsUnit cellType:0 skipID:nil]];
+if (_model.assistUnitName.length &gt; 0) {
+   [tmpArray addObject:[self dictWithTitle:@&quot;辅助单位&quot; subTitle:_model.assistUnitName cellType:0 skipID:nil]];
+}</code></pre></div>
+
+<p><strong>核心代码</strong> 通过字典来绑定数据，包括界面的展示，界面的跳转</p>
+
+<div><pre><code class="language-none">/// 返回一个字典
+/// @param title 标题
+/// @param subTitle 副标题
+/// @param cellType 标识符
+/// @param skipID 跳转标识符
+- (NSDictionary *)dictWithTitle:(NSString *)title subTitle:(id)subTitle cellType:(ISLookRecordCellType)cellType skipID:(id )skipID{
+    return @{@&quot;title&quot;:title, @&quot;subTitle&quot;:subTitle, @&quot;cellType&quot;: @(cellType) ,@&quot;skipID&quot;:skipID};
+}</code></pre></div>
+
+<hr>
+
+<h3 id="toc_15">数据结构</h3>
+
+<ul>
+<li>查询本地数据库，处理数据</li>
+<li>原生与服务器数据交互</li>
+<li>原生与h5数据交互</li>
+</ul>
+
+<h4 id="toc_16">商品规格</h4>
+
+<p><img src="Snip20200623_9.png" alt=""> </p>
+
+<ul>
+<li>选中规格的数据是很重要的，价格管理，库存，库存预警，都是依赖于它</li>
+<li>需要查询本地数据库对应的规格级组，再通过id找到对应规格的名称</li>
+</ul>
+
+<h4 id="toc_17">库存预警和价格管理的数据通过SKUIDStr是交互在一起的</h4>
+
+<p><img src="Snip20200623_7.png" alt=""></p>
+
+<p>第一个0代表color 第二个0代表size 第三个0代表cup 第四个0代表sku1 第五个0代表sku2</p>
+
+<p><strong>注意</strong></p>
+
+<ul>
+<li>全部都是0代表无规格单单位的商品，有值就是其他种情况了，前面商品规格讲过</li>
+<li>SKUIDStr用来标识是哪种规格级别的商品</li>
+<li>StoreID标识哪种仓库，仓库名需要查询本地数据库</li>
+<li>PriceID标识哪种价格类型，同样需查询本地数据库</li>
+<li>服务器拉取和上传的数据都是这种数据结构，上传数据需要双重遍历数据（价格管理、库存预警）</li>
+</ul>
+
+
+
+
+</body>
+
+</html>

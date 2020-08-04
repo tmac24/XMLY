@@ -50,14 +50,14 @@ class MainTabViewController: ESTabBarController {
             }
         }
         
-        let home = FMHomeController()
-        let listen = SwiftGGViewController()
+        let home = SwiftGGViewController()
+        let listen = UIOverviewViewContrller()
         let play = FMHomeController()
         let find = FMHomeController()
         let mine = FMMineController()
         
-        home.tabBarItem = ESTabBarItem.init(FMIrregularityBasicContentView(), title: "首页", image: UIImage(named: "home"), selectedImage: UIImage(named: "home_1"))
-        listen.tabBarItem = ESTabBarItem.init(FMIrregularityBasicContentView(), title: "我听", image: UIImage(named: "find"), selectedImage: UIImage(named: "find_1"))
+        home.tabBarItem = ESTabBarItem.init(FMIrregularityBasicContentView(), title: "SwiftGG", image: UIImage(named: "home"), selectedImage: UIImage(named: "home_1"))
+        listen.tabBarItem = ESTabBarItem.init(FMIrregularityBasicContentView(), title: "UI", image: UIImage(named: "find"), selectedImage: UIImage(named: "find_1"))
         play.tabBarItem = ESTabBarItem.init(FMIrregularityBasicContentView(), title: nil, image: UIImage(named: "tab_play"), selectedImage: UIImage(named: "tab_play"))
         find.tabBarItem = ESTabBarItem.init(FMIrregularityBasicContentView(), title: "发现", image: UIImage(named: "favor"), selectedImage: UIImage(named: "favor_1"))
         mine.tabBarItem = ESTabBarItem.init(FMIrregularityBasicContentView(), title: "我的", image: UIImage(named: "me"), selectedImage: UIImage(named: "me_1"))
@@ -67,8 +67,8 @@ class MainTabViewController: ESTabBarController {
         let playNav = FMNavigationController.init(rootViewController: play)
         let findNav = FMNavigationController.init(rootViewController: find)
         let mineNav = FMNavigationController.init(rootViewController: mine)
-        home.title = "首页"
-        listen.title = "我听"
+        home.title = "SwiftGG"
+        listen.title = "UI"
         play.title = "播放"
         find.title = "发现"
         mine.title = "我的"

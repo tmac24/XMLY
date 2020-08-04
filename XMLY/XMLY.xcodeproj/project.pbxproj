@@ -47,6 +47,16 @@
 		3154D9D5249B598300B8951D /* FMRadioHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3154D9D3249B598300B8951D /* FMRadioHeaderView.swift */; };
 		3154D9D6249B598300B8951D /* FMRadioHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3154D9D4249B598300B8951D /* FMRadioHeaderView.xib */; };
 		315A798624A83C7B00605C76 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315A798524A83C7B00605C76 /* People.swift */; };
+		3161DFC124D904AC000AB6A2 /* Snip20200623_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 3161DFB924D904AC000AB6A2 /* Snip20200623_7.png */; };
+		3161DFC224D904AC000AB6A2 /* Snip20200623_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 3161DFBA24D904AC000AB6A2 /* Snip20200623_6.png */; };
+		3161DFC324D904AC000AB6A2 /* Snip20200623_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3161DFBB24D904AC000AB6A2 /* Snip20200623_4.png */; };
+		3161DFC424D904AC000AB6A2 /* 截屏2020-06-22 下午2.14.22.png in Resources */ = {isa = PBXBuildFile; fileRef = 3161DFBC24D904AC000AB6A2 /* 截屏2020-06-22 下午2.14.22.png */; };
+		3161DFC524D904AC000AB6A2 /* Snip20200623_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 3161DFBD24D904AC000AB6A2 /* Snip20200623_5.png */; };
+		3161DFC624D904AC000AB6A2 /* 截屏2020-06-22 下午4.11.31.png in Resources */ = {isa = PBXBuildFile; fileRef = 3161DFBE24D904AC000AB6A2 /* 截屏2020-06-22 下午4.11.31.png */; };
+		3161DFC724D904AC000AB6A2 /* Snip20200623_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 3161DFBF24D904AC000AB6A2 /* Snip20200623_9.png */; };
+		3161DFC824D904AC000AB6A2 /* 商品档案文档.html in Resources */ = {isa = PBXBuildFile; fileRef = 3161DFC024D904AC000AB6A2 /* 商品档案文档.html */; };
+		3161DFCB24D90EB2000AB6A2 /* UIOverviewViewContrller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DFCA24D90EB2000AB6A2 /* UIOverviewViewContrller.swift */; };
+		3161DFCD24D92666000AB6A2 /* XWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DFCC24D92666000AB6A2 /* XWebViewController.swift */; };
 		3166ADE124D2C1EA00DC2DEA /* SwiftGGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3166ADDF24D2C1EA00DC2DEA /* SwiftGGViewController.swift */; };
 		3166ADE224D2C1EA00DC2DEA /* SwiftGGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3166ADE024D2C1EA00DC2DEA /* SwiftGGViewController.xib */; };
 		3166ADE624D2CBFE00DC2DEA /* GG1_basicsVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3166ADE524D2CBFE00DC2DEA /* GG1_basicsVc.swift */; };
@@ -102,6 +112,16 @@
 		3154D9D3249B598300B8951D /* FMRadioHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMRadioHeaderView.swift; sourceTree = "<group>"; };
 		3154D9D4249B598300B8951D /* FMRadioHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FMRadioHeaderView.xib; sourceTree = "<group>"; };
 		315A798524A83C7B00605C76 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		3161DFB924D904AC000AB6A2 /* Snip20200623_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20200623_7.png; sourceTree = "<group>"; };
+		3161DFBA24D904AC000AB6A2 /* Snip20200623_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20200623_6.png; sourceTree = "<group>"; };
+		3161DFBB24D904AC000AB6A2 /* Snip20200623_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20200623_4.png; sourceTree = "<group>"; };
+		3161DFBC24D904AC000AB6A2 /* 截屏2020-06-22 下午2.14.22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "截屏2020-06-22 下午2.14.22.png"; sourceTree = "<group>"; };
+		3161DFBD24D904AC000AB6A2 /* Snip20200623_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20200623_5.png; sourceTree = "<group>"; };
+		3161DFBE24D904AC000AB6A2 /* 截屏2020-06-22 下午4.11.31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "截屏2020-06-22 下午4.11.31.png"; sourceTree = "<group>"; };
+		3161DFBF24D904AC000AB6A2 /* Snip20200623_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20200623_9.png; sourceTree = "<group>"; };
+		3161DFC024D904AC000AB6A2 /* 商品档案文档.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "商品档案文档.html"; sourceTree = "<group>"; };
+		3161DFCA24D90EB2000AB6A2 /* UIOverviewViewContrller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIOverviewViewContrller.swift; sourceTree = "<group>"; };
+		3161DFCC24D92666000AB6A2 /* XWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XWebViewController.swift; sourceTree = "<group>"; };
 		3166ADDF24D2C1EA00DC2DEA /* SwiftGGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGGViewController.swift; sourceTree = "<group>"; };
 		3166ADE024D2C1EA00DC2DEA /* SwiftGGViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwiftGGViewController.xib; sourceTree = "<group>"; };
 		3166ADE524D2CBFE00DC2DEA /* GG1_basicsVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GG1_basicsVc.swift; sourceTree = "<group>"; };
@@ -362,9 +382,34 @@
 			path = Netting;
 			sourceTree = "<group>";
 		};
+		3161DFB824D904AC000AB6A2 /* 商品档案 */ = {
+			isa = PBXGroup;
+			children = (
+				3161DFC024D904AC000AB6A2 /* 商品档案文档.html */,
+				3161DFBE24D904AC000AB6A2 /* 截屏2020-06-22 下午4.11.31.png */,
+				3161DFB924D904AC000AB6A2 /* Snip20200623_7.png */,
+				3161DFBA24D904AC000AB6A2 /* Snip20200623_6.png */,
+				3161DFBB24D904AC000AB6A2 /* Snip20200623_4.png */,
+				3161DFBC24D904AC000AB6A2 /* 截屏2020-06-22 下午2.14.22.png */,
+				3161DFBD24D904AC000AB6A2 /* Snip20200623_5.png */,
+				3161DFBF24D904AC000AB6A2 /* Snip20200623_9.png */,
+			);
+			path = "商品档案";
+			sourceTree = "<group>";
+		};
+		3161DFC924D90E46000AB6A2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3161DFCA24D90EB2000AB6A2 /* UIOverviewViewContrller.swift */,
+				3161DFCC24D92666000AB6A2 /* XWebViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		3166ADDD24D2C14400DC2DEA /* Learn */ = {
 			isa = PBXGroup;
 			children = (
+				3161DFC924D90E46000AB6A2 /* UI */,
 				3166ADDE24D2C15000DC2DEA /* swiftGG */,
 			);
 			path = Learn;
@@ -376,6 +421,7 @@
 				3166ADDF24D2C1EA00DC2DEA /* SwiftGGViewController.swift */,
 				3166ADE024D2C1EA00DC2DEA /* SwiftGGViewController.xib */,
 				3166ADE524D2CBFE00DC2DEA /* GG1_basicsVc.swift */,
+				3161DFB824D904AC000AB6A2 /* 商品档案 */,
 			);
 			path = swiftGG;
 			sourceTree = "<group>";
@@ -499,10 +545,18 @@
 			files = (
 				3154D9CE249B342100B8951D /* FMRadioCategoriesCell.xib in Resources */,
 				3154D9D6249B598300B8951D /* FMRadioHeaderView.xib in Resources */,
+				3161DFC524D904AC000AB6A2 /* Snip20200623_5.png in Resources */,
 				31536097249367A0002392BB /* LaunchScreen.storyboard in Resources */,
+				3161DFC124D904AC000AB6A2 /* Snip20200623_7.png in Resources */,
 				3166ADE224D2C1EA00DC2DEA /* SwiftGGViewController.xib in Resources */,
 				3154D9C4249B0C6800B8951D /* FMRadioSquareCell.xib in Resources */,
+				3161DFC724D904AC000AB6A2 /* Snip20200623_9.png in Resources */,
+				3161DFC424D904AC000AB6A2 /* 截屏2020-06-22 下午2.14.22.png in Resources */,
+				3161DFC624D904AC000AB6A2 /* 截屏2020-06-22 下午4.11.31.png in Resources */,
 				31536094249367A0002392BB /* Assets.xcassets in Resources */,
+				3161DFC224D904AC000AB6A2 /* Snip20200623_6.png in Resources */,
+				3161DFC824D904AC000AB6A2 /* 商品档案文档.html in Resources */,
+				3161DFC324D904AC000AB6A2 /* Snip20200623_4.png in Resources */,
 				316EC5A7249C94D500E328EF /* FMMineMakeCell.xib in Resources */,
 				31536092249367A0002392BB /* Main.storyboard in Resources */,
 				3154D9D2249B4D7600B8951D /* FMHomeRadiosCell.xib in Resources */,
@@ -568,6 +622,7 @@
 				315A798624A83C7B00605C76 /* People.swift in Sources */,
 				315360BA24937AA7002392BB /* WRProxy.swift in Sources */,
 				3154D9D1249B4D7600B8951D /* FMHomeRadiosCell.swift in Sources */,
+				3161DFCB24D90EB2000AB6A2 /* UIOverviewViewContrller.swift in Sources */,
 				3152CD3824971A6200C407C4 /* MainTabViewController.swift in Sources */,
 				315319B22498A10300658B55 /* FMHomeClassifyCell.swift in Sources */,
 				315360B924937AA7002392BB /* WRCustomNavigationBar.swift in Sources */,
@@ -583,6 +638,7 @@
 				315360BE24937AA7002392BB /* URefresh.swift in Sources */,
 				315319B92498BF0600658B55 /* FMHomeClassifyAPI.swift in Sources */,
 				316EC5A9249CAF0E00E328EF /* FMCVLayerView.swift in Sources */,
+				3161DFCD24D92666000AB6A2 /* XWebViewController.swift in Sources */,
 				3152CD43249722D000C407C4 /* FMIrregularityBasicContentView.swift in Sources */,
 				3152CD3F24971F6900C407C4 /* FMBasicContentView.swift in Sources */,
 				315319B42498A90B00658B55 /* FMHomeClassifyModel.swift in Sources */,
