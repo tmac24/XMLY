@@ -57,9 +57,12 @@
 		3161DFC824D904AC000AB6A2 /* 商品档案文档.html in Resources */ = {isa = PBXBuildFile; fileRef = 3161DFC024D904AC000AB6A2 /* 商品档案文档.html */; };
 		3161DFCB24D90EB2000AB6A2 /* UIOverviewViewContrller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DFCA24D90EB2000AB6A2 /* UIOverviewViewContrller.swift */; };
 		3161DFCD24D92666000AB6A2 /* XWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DFCC24D92666000AB6A2 /* XWebViewController.swift */; };
+		3161DFD124D96316000AB6A2 /* 1.基础部分.md in Resources */ = {isa = PBXBuildFile; fileRef = 3161DFCF24D96316000AB6A2 /* 1.基础部分.md */; };
+		3161DFD224D96316000AB6A2 /* Snip20200804_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3161DFD024D96316000AB6A2 /* Snip20200804_2.png */; };
+		3161DFD424D9636C000AB6A2 /* 1.基础部分.html in Resources */ = {isa = PBXBuildFile; fileRef = 3161DFD324D9636B000AB6A2 /* 1.基础部分.html */; };
 		3166ADE124D2C1EA00DC2DEA /* SwiftGGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3166ADDF24D2C1EA00DC2DEA /* SwiftGGViewController.swift */; };
 		3166ADE224D2C1EA00DC2DEA /* SwiftGGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3166ADE024D2C1EA00DC2DEA /* SwiftGGViewController.xib */; };
-		3166ADE624D2CBFE00DC2DEA /* GG1_basicsVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3166ADE524D2CBFE00DC2DEA /* GG1_basicsVc.swift */; };
+		3166ADE624D2CBFE00DC2DEA /* GGHTMLVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3166ADE524D2CBFE00DC2DEA /* GGHTMLVc.swift */; };
 		316EC5A0249C579D00E328EF /* FMMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316EC59F249C579D00E328EF /* FMMineController.swift */; };
 		316EC5A2249C633500E328EF /* FMMineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316EC5A1249C633500E328EF /* FMMineHeaderView.swift */; };
 		316EC5A6249C94D500E328EF /* FMMineMakeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316EC5A4249C94D500E328EF /* FMMineMakeCell.swift */; };
@@ -122,9 +125,12 @@
 		3161DFC024D904AC000AB6A2 /* 商品档案文档.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "商品档案文档.html"; sourceTree = "<group>"; };
 		3161DFCA24D90EB2000AB6A2 /* UIOverviewViewContrller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIOverviewViewContrller.swift; sourceTree = "<group>"; };
 		3161DFCC24D92666000AB6A2 /* XWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XWebViewController.swift; sourceTree = "<group>"; };
+		3161DFCF24D96316000AB6A2 /* 1.基础部分.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "1.基础部分.md"; sourceTree = "<group>"; };
+		3161DFD024D96316000AB6A2 /* Snip20200804_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20200804_2.png; sourceTree = "<group>"; };
+		3161DFD324D9636B000AB6A2 /* 1.基础部分.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "1.基础部分.html"; sourceTree = "<group>"; };
 		3166ADDF24D2C1EA00DC2DEA /* SwiftGGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGGViewController.swift; sourceTree = "<group>"; };
 		3166ADE024D2C1EA00DC2DEA /* SwiftGGViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwiftGGViewController.xib; sourceTree = "<group>"; };
-		3166ADE524D2CBFE00DC2DEA /* GG1_basicsVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GG1_basicsVc.swift; sourceTree = "<group>"; };
+		3166ADE524D2CBFE00DC2DEA /* GGHTMLVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGHTMLVc.swift; sourceTree = "<group>"; };
 		316EC59F249C579D00E328EF /* FMMineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMMineController.swift; sourceTree = "<group>"; };
 		316EC5A1249C633500E328EF /* FMMineHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMMineHeaderView.swift; sourceTree = "<group>"; };
 		316EC5A4249C94D500E328EF /* FMMineMakeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMMineMakeCell.swift; sourceTree = "<group>"; };
@@ -406,6 +412,16 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		3161DFCE24D96316000AB6A2 /* 1.基础部分 */ = {
+			isa = PBXGroup;
+			children = (
+				3161DFD324D9636B000AB6A2 /* 1.基础部分.html */,
+				3161DFCF24D96316000AB6A2 /* 1.基础部分.md */,
+				3161DFD024D96316000AB6A2 /* Snip20200804_2.png */,
+			);
+			path = "1.基础部分";
+			sourceTree = "<group>";
+		};
 		3166ADDD24D2C14400DC2DEA /* Learn */ = {
 			isa = PBXGroup;
 			children = (
@@ -418,9 +434,10 @@
 		3166ADDE24D2C15000DC2DEA /* swiftGG */ = {
 			isa = PBXGroup;
 			children = (
+				3161DFCE24D96316000AB6A2 /* 1.基础部分 */,
 				3166ADDF24D2C1EA00DC2DEA /* SwiftGGViewController.swift */,
 				3166ADE024D2C1EA00DC2DEA /* SwiftGGViewController.xib */,
-				3166ADE524D2CBFE00DC2DEA /* GG1_basicsVc.swift */,
+				3166ADE524D2CBFE00DC2DEA /* GGHTMLVc.swift */,
 				3161DFB824D904AC000AB6A2 /* 商品档案 */,
 			);
 			path = swiftGG;
@@ -544,9 +561,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3154D9CE249B342100B8951D /* FMRadioCategoriesCell.xib in Resources */,
+				3161DFD124D96316000AB6A2 /* 1.基础部分.md in Resources */,
 				3154D9D6249B598300B8951D /* FMRadioHeaderView.xib in Resources */,
 				3161DFC524D904AC000AB6A2 /* Snip20200623_5.png in Resources */,
 				31536097249367A0002392BB /* LaunchScreen.storyboard in Resources */,
+				3161DFD424D9636C000AB6A2 /* 1.基础部分.html in Resources */,
 				3161DFC124D904AC000AB6A2 /* Snip20200623_7.png in Resources */,
 				3166ADE224D2C1EA00DC2DEA /* SwiftGGViewController.xib in Resources */,
 				3154D9C4249B0C6800B8951D /* FMRadioSquareCell.xib in Resources */,
@@ -559,6 +578,7 @@
 				3161DFC324D904AC000AB6A2 /* Snip20200623_4.png in Resources */,
 				316EC5A7249C94D500E328EF /* FMMineMakeCell.xib in Resources */,
 				31536092249367A0002392BB /* Main.storyboard in Resources */,
+				3161DFD224D96316000AB6A2 /* Snip20200804_2.png in Resources */,
 				3154D9D2249B4D7600B8951D /* FMHomeRadiosCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -647,7 +667,7 @@
 				316EC5A2249C633500E328EF /* FMMineHeaderView.swift in Sources */,
 				3154D9D5249B598300B8951D /* FMRadioHeaderView.swift in Sources */,
 				315360A624937600002392BB /* MainViewController.swift in Sources */,
-				3166ADE624D2CBFE00DC2DEA /* GG1_basicsVc.swift in Sources */,
+				3166ADE624D2CBFE00DC2DEA /* GGHTMLVc.swift in Sources */,
 				3152CD3A24971ACC00C407C4 /* FMHomeController.swift in Sources */,
 				315340092499CA1A005870ED /* FMHomeBroadcastController.swift in Sources */,
 				3152CD3D24971D4B00C407C4 /* FMNavigationController.swift in Sources */,

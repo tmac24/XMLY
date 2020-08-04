@@ -11,11 +11,11 @@ import UIKit
 class SwiftGGViewController: UIViewController {
     private let SwiftGGCellID = "SwiftGGCellID"
 
-    let dataArray = [["title":"基础部分","vc":GG1_basicsVc()],
-                     ["title":"基础运算符","vc":GG1_basicsVc()],
-                     ["title":"字符串和字符","vc":GG1_basicsVc()],
-                     ["title":"集合类型","vc":GG1_basicsVc()],
-                     ["title":"控制流","vc":GG1_basicsVc()],
+    let dataArray = [["title":"基础部分","path":"1.基础部分"],
+                     ["title":"基础运算符","path":"商品档案文档"],
+                     ["title":"字符串和字符","path":"商品档案文档"],
+                     ["title":"集合类型","path":"商品档案文档"],
+                     ["title":"控制流","path":"商品档案文档"],
     ]
     @IBOutlet weak var tableView: UITableView!
     
@@ -35,15 +35,16 @@ extension SwiftGGViewController:UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: SwiftGGCellID, for: indexPath)
-        cell.textLabel?.text = dataArray[indexPath.row]["title"] as? String
+        cell.textLabel?.text = dataArray[indexPath.row]["title"]
         cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let vc = dataArray[indexPath.row]["vc"] as? UIViewController
-        vc?.title = dataArray[indexPath.row]["title"] as? String
-        navigationController?.pushViewController(vc!, animated: true)
+        let vc = GGHTMLVc.init()
+        vc.title = dataArray[indexPath.row]["title"]
+        vc.path = dataArray[indexPath.row]["path"]
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

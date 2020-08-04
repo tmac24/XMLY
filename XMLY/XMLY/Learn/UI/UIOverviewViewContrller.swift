@@ -13,10 +13,10 @@ class UIOverviewViewContrller: UIViewController, UITableViewDelegate, UITableVie
     
     lazy var datasource: Array = {
         return [["title":"webView","vc":XWebViewController()],
-                ["title":"基础运算符","vc":GG1_basicsVc()],
-                ["title":"字符串和字符","vc":GG1_basicsVc()],
-                ["title":"集合类型","vc":GG1_basicsVc()],
-                ["title":"控制流","vc":GG1_basicsVc()],]
+                ["title":"基础运算符","vc":GGHTMLVc()],
+                ["title":"字符串和字符","vc":GGHTMLVc()],
+                ["title":"集合类型","vc":GGHTMLVc()],
+                ["title":"控制流","vc":GGHTMLVc()],]
     }()
 
     lazy var tableView: UITableView = {
