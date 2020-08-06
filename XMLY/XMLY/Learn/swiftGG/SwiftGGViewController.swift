@@ -12,7 +12,7 @@ class SwiftGGViewController: UIViewController {
     private let SwiftGGCellID = "SwiftGGCellID"
 
     let dataArray = [["title":"基础部分","path":"1.基础部分"],
-                     ["title":"基础运算符","path":"商品档案文档"],
+                     ["title":"基础运算符","path":"2.基本运算符"],
                      ["title":"字符串和字符","path":"商品档案文档"],
                      ["title":"集合类型","path":"商品档案文档"],
                      ["title":"控制流","path":"商品档案文档"],

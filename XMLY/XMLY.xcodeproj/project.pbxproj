@@ -47,6 +47,8 @@
 		3154D9D5249B598300B8951D /* FMRadioHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3154D9D3249B598300B8951D /* FMRadioHeaderView.swift */; };
 		3154D9D6249B598300B8951D /* FMRadioHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3154D9D4249B598300B8951D /* FMRadioHeaderView.xib */; };
 		315A798624A83C7B00605C76 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315A798524A83C7B00605C76 /* People.swift */; };
+		315E69C924DAA07F00D71A94 /* 2.基本运算符.md in Resources */ = {isa = PBXBuildFile; fileRef = 315E69C724DAA07F00D71A94 /* 2.基本运算符.md */; };
+		315E69CA24DAA07F00D71A94 /* 2.基本运算符.html in Resources */ = {isa = PBXBuildFile; fileRef = 315E69C824DAA07F00D71A94 /* 2.基本运算符.html */; };
 		3161DFC124D904AC000AB6A2 /* Snip20200623_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 3161DFB924D904AC000AB6A2 /* Snip20200623_7.png */; };
 		3161DFC224D904AC000AB6A2 /* Snip20200623_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 3161DFBA24D904AC000AB6A2 /* Snip20200623_6.png */; };
 		3161DFC324D904AC000AB6A2 /* Snip20200623_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3161DFBB24D904AC000AB6A2 /* Snip20200623_4.png */; };
@@ -115,6 +117,8 @@
 		3154D9D3249B598300B8951D /* FMRadioHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMRadioHeaderView.swift; sourceTree = "<group>"; };
 		3154D9D4249B598300B8951D /* FMRadioHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FMRadioHeaderView.xib; sourceTree = "<group>"; };
 		315A798524A83C7B00605C76 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		315E69C724DAA07F00D71A94 /* 2.基本运算符.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "2.基本运算符.md"; sourceTree = "<group>"; };
+		315E69C824DAA07F00D71A94 /* 2.基本运算符.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "2.基本运算符.html"; sourceTree = "<group>"; };
 		3161DFB924D904AC000AB6A2 /* Snip20200623_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20200623_7.png; sourceTree = "<group>"; };
 		3161DFBA24D904AC000AB6A2 /* Snip20200623_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20200623_6.png; sourceTree = "<group>"; };
 		3161DFBB24D904AC000AB6A2 /* Snip20200623_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20200623_4.png; sourceTree = "<group>"; };
@@ -388,6 +392,15 @@
 			path = Netting;
 			sourceTree = "<group>";
 		};
+		315E69C624DAA07F00D71A94 /* 2.基本运算符 */ = {
+			isa = PBXGroup;
+			children = (
+				315E69C724DAA07F00D71A94 /* 2.基本运算符.md */,
+				315E69C824DAA07F00D71A94 /* 2.基本运算符.html */,
+			);
+			path = "2.基本运算符";
+			sourceTree = "<group>";
+		};
 		3161DFB824D904AC000AB6A2 /* 商品档案 */ = {
 			isa = PBXGroup;
 			children = (
@@ -434,6 +447,7 @@
 		3166ADDE24D2C15000DC2DEA /* swiftGG */ = {
 			isa = PBXGroup;
 			children = (
+				315E69C624DAA07F00D71A94 /* 2.基本运算符 */,
 				3161DFCE24D96316000AB6A2 /* 1.基础部分 */,
 				3166ADDF24D2C1EA00DC2DEA /* SwiftGGViewController.swift */,
 				3166ADE024D2C1EA00DC2DEA /* SwiftGGViewController.xib */,
@@ -562,6 +576,7 @@
 			files = (
 				3154D9CE249B342100B8951D /* FMRadioCategoriesCell.xib in Resources */,
 				3161DFD124D96316000AB6A2 /* 1.基础部分.md in Resources */,
+				315E69CA24DAA07F00D71A94 /* 2.基本运算符.html in Resources */,
 				3154D9D6249B598300B8951D /* FMRadioHeaderView.xib in Resources */,
 				3161DFC524D904AC000AB6A2 /* Snip20200623_5.png in Resources */,
 				31536097249367A0002392BB /* LaunchScreen.storyboard in Resources */,
@@ -575,6 +590,7 @@
 				31536094249367A0002392BB /* Assets.xcassets in Resources */,
 				3161DFC224D904AC000AB6A2 /* Snip20200623_6.png in Resources */,
 				3161DFC824D904AC000AB6A2 /* 商品档案文档.html in Resources */,
+				315E69C924DAA07F00D71A94 /* 2.基本运算符.md in Resources */,
 				3161DFC324D904AC000AB6A2 /* Snip20200623_4.png in Resources */,
 				316EC5A7249C94D500E328EF /* FMMineMakeCell.xib in Resources */,
 				31536092249367A0002392BB /* Main.storyboard in Resources */,
@@ -819,8 +835,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3V39Q7F96X;
+				DEVELOPMENT_TEAM = 3JQR6B87WN;
 				INFOPLIST_FILE = XMLY/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -838,8 +855,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3V39Q7F96X;
+				DEVELOPMENT_TEAM = 3JQR6B87WN;
 				INFOPLIST_FILE = XMLY/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
