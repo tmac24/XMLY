@@ -32,6 +32,8 @@ target ‘XMLY’ do
   pod 'SVProgressHUD'
   #播放网络音频
   pod 'StreamingKit'
-  
+  #网络框架
   pod 'Alamofire'
+  #数据库
+  pod 'FMDB'
 end

@@ -38,15 +38,6 @@ class MainViewController: UITabBarController {
             var age : Int = 0
             var height : Double = 0.0
         }
-
-//        let p : Person = Person()
-
-        // 在赋值时,监听该属性的改变
-        // 在OC中是通过重写set方法
-        // 在swift中,可以给属性添加监听器
-//        p.name = "why"
-
-        //p.name = "yz"
     }
     
     override func viewWillAppear(_ animated: Bool) {

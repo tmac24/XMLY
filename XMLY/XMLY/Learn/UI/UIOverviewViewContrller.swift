@@ -13,6 +13,7 @@ class UIOverviewViewContrller: UIViewController, UITableViewDelegate, UITableVie
     
     lazy var datasource: Array = {
         return [["title":"webView","vc":XWebViewController()],
+                ["title":"fmdbTest1","vc":FMDBTestOneVC()],
                 ["title":"基础运算符","vc":GGHTMLVc()],
                 ["title":"字符串和字符","vc":GGHTMLVc()],
                 ["title":"集合类型","vc":GGHTMLVc()],
@@ -38,7 +39,7 @@ class UIOverviewViewContrller: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return datasource.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

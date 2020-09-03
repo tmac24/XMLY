@@ -47,6 +47,8 @@
 		3154D9D5249B598300B8951D /* FMRadioHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3154D9D3249B598300B8951D /* FMRadioHeaderView.swift */; };
 		3154D9D6249B598300B8951D /* FMRadioHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3154D9D4249B598300B8951D /* FMRadioHeaderView.xib */; };
 		315A798624A83C7B00605C76 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315A798524A83C7B00605C76 /* People.swift */; };
+		315E0863250086590065BAFE /* FMDBTestOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 315E0862250086590065BAFE /* FMDBTestOneVC.m */; };
+		315E086625009B770065BAFE /* FMStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 315E086525009B770065BAFE /* FMStudent.m */; };
 		315E69C924DAA07F00D71A94 /* 2.基本运算符.md in Resources */ = {isa = PBXBuildFile; fileRef = 315E69C724DAA07F00D71A94 /* 2.基本运算符.md */; };
 		315E69CA24DAA07F00D71A94 /* 2.基本运算符.html in Resources */ = {isa = PBXBuildFile; fileRef = 315E69C824DAA07F00D71A94 /* 2.基本运算符.html */; };
 		3161DFC124D904AC000AB6A2 /* Snip20200623_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 3161DFB924D904AC000AB6A2 /* Snip20200623_7.png */; };
@@ -65,6 +67,10 @@
 		3166ADE124D2C1EA00DC2DEA /* SwiftGGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3166ADDF24D2C1EA00DC2DEA /* SwiftGGViewController.swift */; };
 		3166ADE224D2C1EA00DC2DEA /* SwiftGGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3166ADE024D2C1EA00DC2DEA /* SwiftGGViewController.xib */; };
 		3166ADE624D2CBFE00DC2DEA /* GGHTMLVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3166ADE524D2CBFE00DC2DEA /* GGHTMLVc.swift */; };
+		3167130624EA306B0091A5FB /* XXEatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3167130424EA306B0091A5FB /* XXEatViewController.swift */; };
+		3167130724EA306B0091A5FB /* XXEatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3167130524EA306B0091A5FB /* XXEatViewController.xib */; };
+		3167130A24EA36D60091A5FB /* XXEatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3167130824EA36D60091A5FB /* XXEatCell.swift */; };
+		3167130B24EA36D60091A5FB /* XXEatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3167130924EA36D60091A5FB /* XXEatCell.xib */; };
 		316EC5A0249C579D00E328EF /* FMMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316EC59F249C579D00E328EF /* FMMineController.swift */; };
 		316EC5A2249C633500E328EF /* FMMineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316EC5A1249C633500E328EF /* FMMineHeaderView.swift */; };
 		316EC5A6249C94D500E328EF /* FMMineMakeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316EC5A4249C94D500E328EF /* FMMineMakeCell.swift */; };
@@ -117,6 +123,11 @@
 		3154D9D3249B598300B8951D /* FMRadioHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMRadioHeaderView.swift; sourceTree = "<group>"; };
 		3154D9D4249B598300B8951D /* FMRadioHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FMRadioHeaderView.xib; sourceTree = "<group>"; };
 		315A798524A83C7B00605C76 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		315E0860250086590065BAFE /* XMLY-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XMLY-Bridging-Header.h"; sourceTree = "<group>"; };
+		315E0861250086590065BAFE /* FMDBTestOneVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDBTestOneVC.h; sourceTree = "<group>"; };
+		315E0862250086590065BAFE /* FMDBTestOneVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBTestOneVC.m; sourceTree = "<group>"; };
+		315E086425009B770065BAFE /* FMStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMStudent.h; sourceTree = "<group>"; };
+		315E086525009B770065BAFE /* FMStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMStudent.m; sourceTree = "<group>"; };
 		315E69C724DAA07F00D71A94 /* 2.基本运算符.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "2.基本运算符.md"; sourceTree = "<group>"; };
 		315E69C824DAA07F00D71A94 /* 2.基本运算符.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "2.基本运算符.html"; sourceTree = "<group>"; };
 		3161DFB924D904AC000AB6A2 /* Snip20200623_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20200623_7.png; sourceTree = "<group>"; };
@@ -135,6 +146,10 @@
 		3166ADDF24D2C1EA00DC2DEA /* SwiftGGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGGViewController.swift; sourceTree = "<group>"; };
 		3166ADE024D2C1EA00DC2DEA /* SwiftGGViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwiftGGViewController.xib; sourceTree = "<group>"; };
 		3166ADE524D2CBFE00DC2DEA /* GGHTMLVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGHTMLVc.swift; sourceTree = "<group>"; };
+		3167130424EA306B0091A5FB /* XXEatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXEatViewController.swift; sourceTree = "<group>"; };
+		3167130524EA306B0091A5FB /* XXEatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XXEatViewController.xib; sourceTree = "<group>"; };
+		3167130824EA36D60091A5FB /* XXEatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXEatCell.swift; sourceTree = "<group>"; };
+		3167130924EA36D60091A5FB /* XXEatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XXEatCell.xib; sourceTree = "<group>"; };
 		316EC59F249C579D00E328EF /* FMMineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMMineController.swift; sourceTree = "<group>"; };
 		316EC5A1249C633500E328EF /* FMMineHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMMineHeaderView.swift; sourceTree = "<group>"; };
 		316EC5A4249C94D500E328EF /* FMMineMakeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMMineMakeCell.swift; sourceTree = "<group>"; };
@@ -240,6 +255,8 @@
 		31536089249367A0002392BB /* XMLY */ = {
 			isa = PBXGroup;
 			children = (
+				315E085F250086030065BAFE /* fmdbLearn */,
+				3167130324EA303B0091A5FB /* Happy */,
 				3166ADDD24D2C14400DC2DEA /* Learn */,
 				315A798424A83C5300605C76 /* Netting */,
 				315360A22493735A002392BB /* AppDelegate */,
@@ -392,6 +409,18 @@
 			path = Netting;
 			sourceTree = "<group>";
 		};
+		315E085F250086030065BAFE /* fmdbLearn */ = {
+			isa = PBXGroup;
+			children = (
+				315E0861250086590065BAFE /* FMDBTestOneVC.h */,
+				315E0862250086590065BAFE /* FMDBTestOneVC.m */,
+				315E0860250086590065BAFE /* XMLY-Bridging-Header.h */,
+				315E086425009B770065BAFE /* FMStudent.h */,
+				315E086525009B770065BAFE /* FMStudent.m */,
+			);
+			path = fmdbLearn;
+			sourceTree = "<group>";
+		};
 		315E69C624DAA07F00D71A94 /* 2.基本运算符 */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +484,17 @@
 				3161DFB824D904AC000AB6A2 /* 商品档案 */,
 			);
 			path = swiftGG;
+			sourceTree = "<group>";
+		};
+		3167130324EA303B0091A5FB /* Happy */ = {
+			isa = PBXGroup;
+			children = (
+				3167130424EA306B0091A5FB /* XXEatViewController.swift */,
+				3167130824EA36D60091A5FB /* XXEatCell.swift */,
+				3167130924EA36D60091A5FB /* XXEatCell.xib */,
+				3167130524EA306B0091A5FB /* XXEatViewController.xib */,
+			);
+			path = Happy;
 			sourceTree = "<group>";
 		};
 		316EC59E249C574C00E328EF /* Mine我的 */ = {
@@ -548,6 +588,7 @@
 				TargetAttributes = {
 					31536086249367A0002392BB = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -574,6 +615,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3167130B24EA36D60091A5FB /* XXEatCell.xib in Resources */,
 				3154D9CE249B342100B8951D /* FMRadioCategoriesCell.xib in Resources */,
 				3161DFD124D96316000AB6A2 /* 1.基础部分.md in Resources */,
 				315E69CA24DAA07F00D71A94 /* 2.基本运算符.html in Resources */,
@@ -581,6 +623,7 @@
 				3161DFC524D904AC000AB6A2 /* Snip20200623_5.png in Resources */,
 				31536097249367A0002392BB /* LaunchScreen.storyboard in Resources */,
 				3161DFD424D9636C000AB6A2 /* 1.基础部分.html in Resources */,
+				3167130724EA306B0091A5FB /* XXEatViewController.xib in Resources */,
 				3161DFC124D904AC000AB6A2 /* Snip20200623_7.png in Resources */,
 				3166ADE224D2C1EA00DC2DEA /* SwiftGGViewController.xib in Resources */,
 				3154D9C4249B0C6800B8951D /* FMRadioSquareCell.xib in Resources */,
@@ -664,7 +707,9 @@
 				315360B924937AA7002392BB /* WRCustomNavigationBar.swift in Sources */,
 				315360BB24937AA7002392BB /* WRCycleScrollView.swift in Sources */,
 				3166ADE124D2C1EA00DC2DEA /* SwiftGGViewController.swift in Sources */,
+				315E0863250086590065BAFE /* FMDBTestOneVC.m in Sources */,
 				3154D9CD249B342100B8951D /* FMRadioCategoriesCell.swift in Sources */,
+				3167130624EA306B0091A5FB /* XXEatViewController.swift in Sources */,
 				3152CD4724975CB500C407C4 /* FMArrayUtils.swift in Sources */,
 				3154D9C3249B0C6800B8951D /* FMRadioSquareCell.swift in Sources */,
 				3154D9CA249B185800B8951D /* FMRadiosModel.swift in Sources */,
@@ -672,9 +717,11 @@
 				3153608B249367A0002392BB /* AppDelegate.swift in Sources */,
 				315360BD24937AA7002392BB /* ReplicatorLayer.swift in Sources */,
 				315360BE24937AA7002392BB /* URefresh.swift in Sources */,
+				315E086625009B770065BAFE /* FMStudent.m in Sources */,
 				315319B92498BF0600658B55 /* FMHomeClassifyAPI.swift in Sources */,
 				316EC5A9249CAF0E00E328EF /* FMCVLayerView.swift in Sources */,
 				3161DFCD24D92666000AB6A2 /* XWebViewController.swift in Sources */,
+				3167130A24EA36D60091A5FB /* XXEatCell.swift in Sources */,
 				3152CD43249722D000C407C4 /* FMIrregularityBasicContentView.swift in Sources */,
 				3152CD3F24971F6900C407C4 /* FMBasicContentView.swift in Sources */,
 				315319B42498A90B00658B55 /* FMHomeClassifyModel.swift in Sources */,
@@ -834,6 +881,7 @@
 			baseConfigurationReference = 33FADE0CB99E4B05391F506A /* Pods-XMLY.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JQR6B87WN;
 				INFOPLIST_FILE = XMLY/Info.plist;
@@ -844,6 +892,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mac.XMLY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XMLY/fmdbLearn/XMLY-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -854,6 +904,7 @@
 			baseConfigurationReference = BCAFE106EA7CB4FEE6497561 /* Pods-XMLY.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JQR6B87WN;
 				INFOPLIST_FILE = XMLY/Info.plist;
@@ -864,6 +915,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mac.XMLY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XMLY/fmdbLearn/XMLY-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
