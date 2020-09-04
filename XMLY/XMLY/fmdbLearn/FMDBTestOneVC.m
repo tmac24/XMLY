@@ -9,7 +9,9 @@
 #import "FMDBTestOneVC.h"
 #import <FMDB/FMDB.h>
 #import "FMStudent.h"
+#import "DBManager.h"
 
+// https://www.jianshu.com/p/45267dfca32f
 @interface FMDBTestOneVC ()
 
 @end
@@ -22,10 +24,8 @@
     self.title = @"FMDBTestOneVC";
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self createDataBase];
-    
-    //参考网址
-//    https://www.jianshu.com/p/45267dfca32f
+//    [self createDataBase];
+//    [self queryByCondition:@"猪八戒 - -697676084"];
 }
 
 - (void)createDataBase {
@@ -33,7 +33,7 @@
     NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     NSString *path = [docPath stringByAppendingPathComponent:@"student.sqlite"];
     NSLog(@"path = %@",path);
-    // 1..创建数据库对象
+    // 1.创建数据库对象
     FMDatabase *db = [FMDatabase databaseWithPath:path];
     // 2.打开数据库
     if ([db open]) {
@@ -82,20 +82,38 @@
     
 //    4.4 执行查询操作
     
-    // 4.查询
-    NSString *sql = @"select id, name, age FROM t_student";
-    FMResultSet *rs = [db executeQuery:sql];
-    while ([rs next]) {
-        int id = [rs intForColumnIndex:3];
-        NSString *name = [rs stringForColumnIndex:1];
-        int age = [rs intForColumnIndex:2];
-        FMStudent *student = [[FMStudent alloc] init];
-        student.name = name;
-        student.age = age;
-        NSLog(@"%@,%d",student.name,student.age);
-    }
+//    // 4.查询
+//    NSString *sql = @"select id, name, age FROM t_student";
+//    FMResultSet *rs = [db executeQuery:sql];
+//    while ([rs next]) {
+//        int id = [rs intForColumnIndex:3];
+//        NSString *name = [rs stringForColumnIndex:1];
+//        int age = [rs intForColumnIndex:2];
+//        FMStudent *student = [[FMStudent alloc] init];
+//        student.name = name;
+//        student.age = age;
+//        NSLog(@"%@,%d",student.name,student.age);
+//    }
     
 }
+
+// 4.5 条件查询
+- (void)queryByCondition:(NSString *)name {
+    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *dbPath = [docPath stringByAppendingPathComponent:@"student.sqlite"];
+    FMDatabase *dataBase = [FMDatabase databaseWithPath:dbPath];
+    if (![dataBase open]) {
+        return ;
+    }
+    FMResultSet *resultSet = [dataBase executeQueryWithFormat:@"select * from t_student where name = %@",name];
+    while ([resultSet next]) {
+        NSString *name = [resultSet stringForColumnIndex:1];
+        int age = [resultSet intForColumn:@"age"];
+        NSLog(@"Name:%@,Age:%d",name,age);
+    }
+    [dataBase close];
+}
+
 
 
 @end
